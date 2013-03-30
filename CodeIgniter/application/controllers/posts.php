@@ -164,3 +164,4 @@ class Posts extends CI_Controller
 }
 /* End of file posts.php */
 /* Location: ./application/controllers/posts.php */
+//test
