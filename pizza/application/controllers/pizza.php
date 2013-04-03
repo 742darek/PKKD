@@ -17,4 +17,11 @@ function events()
  {
   $this->load->view('pizzeria/about');
  }
+ 
+  function panel()
+
+ {
+  $this->load->view('pizzeria/panel');
+ }
+ 
  }

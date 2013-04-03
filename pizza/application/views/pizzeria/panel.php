@@ -1,9 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3c.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="pl" lang="pl">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-2" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
 
 <title>Pizzeria</title>
@@ -14,8 +13,8 @@
 
 <div id="header"><br />
 
-<h3>Pizzeria PKKD</h3>
-<p><strong>"Pizza najlepsza na Warmii "</strong><br />
+<h3>PKKD</h3>
+<p><strong>"Pizza najlepsza w mieście "</strong><br />
  </p>
 </div>
 
@@ -30,11 +29,17 @@
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
-<li><a href="<?php echo site_url('pizza/index');?>">Strona G��wna</a></li>
+<li><a href="<?php echo site_url('pizza/index');?>">Witamy</a></li>
+
+
+
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
 </ul>
+
+
+
 </div>
 
 <div id="extras">
@@ -48,10 +53,10 @@
 </div>
 
 <div id="content">
-&nbsp;<h2>Witamy na naszej stronie ! </h2>
-<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+&nbsp;<h2><img src="images/ill_title.jpg" alt="ill title" width="63" height="20" />Zdarzenia</h2>
+<p>Dnia 18 marca 2013r otworzyliśmy Pizzerię przy ulicy Bogdana Miłoczyńskiego 22 w Olsztynie! Serdecznie zapraszamy!</p>
 
-<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+<p><img src="images/ill1.jpg" height="100" width="125" class="left" alt="ill_1" />"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
 
 <p>&nbsp;</p>
 
