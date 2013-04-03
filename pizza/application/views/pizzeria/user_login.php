@@ -52,7 +52,10 @@
 			<?php echo form_close(); ?>
 			
 			
-		
+			<?php if ($this->session->userdata('user_id')): ?>
+                <li><a href="<?php echo site_url('users/logout'); ?>">Wyloguj</a></li>
+             
+              <?php endif; ?>
 
 </div>
 

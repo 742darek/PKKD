@@ -6,7 +6,8 @@ body {
 margin: 0 auto;
 padding: 0;
 font: 76% Verdana,Tahoma,Arial,sans-serif;
-background: #211d1e url(images/body_deg.gif) repeat-x}
+background: #211d1e url(images/body_deg.gif) repeat-x}
+
 #wrap {
 background: #000000;
 color: #ffffff;
@@ -130,7 +131,7 @@ padding: 0px 0em 0px 0em;
 width: 790px;
 text-align: center;
 color: #808080;
-font-size: 0.9em;height: 190px;
+font-size: 0.9em;height: 244px;
 background: #211d1e url(images/pom_bas.jpg) no-repeat right;border: none;}
 
 #footer a {

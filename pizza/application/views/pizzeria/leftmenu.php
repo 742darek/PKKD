@@ -1,5 +1,6 @@
-<li><a href="<?php echo site_url('pizza/events');?>">Zdarzenia</a></li>
-<li><a href="<?php echo site_url('pizza/about');?>">O nas</a></li>
-<li><a href="#">Galeria</a></li>
-<li><a href="#">Zdjêcia</a></li>
-<li><a href="<?php echo site_url('pizza/panel');?>">Moje konto</a></li>
+<li><a href="#">Start</a></li>
+<li><a href="#">O nas</a></li>
+<li><a href="#">ZdjÄ™cia</a></li>
+<li><a href="#">Kontakt</a></li>
+<li><a href="<?php echo site_url('users/login');?>">Zaloguj</a></li>
+<li><a href="<?php echo site_url('check/zalogowani');?>">Dla zalogowanych!</a></li>
