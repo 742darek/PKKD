@@ -13,9 +13,9 @@
 
 <div id="header"><br />
 
-<h3>www.your site.com</h3>
-<p><strong>"your slogan can be here "</strong><br />
-  (or anything else )
+<h3>Pizzeria PKKD</h3>
+<p><strong>"najlepsza pizza w mieście"</strong><br />
+
 
 	  
   </p>
