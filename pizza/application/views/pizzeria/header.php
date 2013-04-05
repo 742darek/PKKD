@@ -15,7 +15,11 @@
 <div id="header"><br />
 
 <h3>PIZZERIA PKKD</h3>
+
 <p><strong>"Pizza najlepsza w mie¶cie"</strong><br />
+<?php if ($this->session->userdata('user_id')): ?>
+<li><a href="<?php echo site_url('users/logout'); ?>">Wyloguj</a></li>
+<?php endif; ?>
 
 
 </p>

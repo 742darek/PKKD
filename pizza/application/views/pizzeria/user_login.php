@@ -24,6 +24,7 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 
 
 
+
 </div>
 
 <div id="content">
@@ -48,16 +49,13 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 					dlatego zostaniemy przy "normalnym" zapisie.
 				-->
 				
-				<input type="text" id="usernaname" class="span4" name="username" placeholder="username">
-				<input type="password" id="password" class="span4" name="password" placeholder="HasÅ‚o">
+				<input type="text" id="usernaname" class="span4" name="username" placeholder="Login">
+				<input type="password" id="password" class="span4" name="password" placeholder="Has³o">
 				<button type="submit" name="submit" class="btn btn-info btn-block">Zaloguj</button>
 			<!-- Zamykamu formularz. -->
 			<?php echo form_close(); ?>
 			
 			
-			<?php if ($this->session->userdata('user_id')): ?>
-                <li><a href="<?php echo site_url('users/logout'); ?>">Wyloguj</a></li>
-             
-              <?php endif; ?>
+
 
 </div>

@@ -70,8 +70,12 @@ class Users extends CI_Controller
         // Niszczymy aktualną sesję
         $this->session->sess_destroy();
         // Przekierowujemy na stronę logowania
+        
         redirect('users/login');
+
     }
+    
+
 }
  
 /* End of file users.php */
