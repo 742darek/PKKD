@@ -27,8 +27,8 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 </div>
 
 <div id="content">
-&nbsp;<h2>Rejestracja nowego u¿ytkownika </h2>
-<p>Rejestracja w naszym serwisie jest niezbêdna aby móc wybraæ lub skomponowaæ pizze oraz z³o¿yæ zamówienie</p>
+&nbsp;<h2>Panel admina (tutaj sie bêdzie dodawa³o sk³adniki do pizzy, edytowa³o to itd) </h2>
+
 
 
 
