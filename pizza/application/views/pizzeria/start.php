@@ -36,25 +36,6 @@ ul. Jana Paw�a II Hala G��wna 3/4 tel.798666999</p>
 
 <p>&nbsp;</p>
 
-
-
-
-
-
-	<legend>Logowanie</legend>     
-			<!-- Otwieramy formularz za pomocą funkcji z helpera Form. -->    	
-			<?php echo form_open(); ?>
-				<!-- 
-					Również do definicji pól formularza możemy użyć funkcji z helpera Form, 
-					ale w tym przypadku nie widać specjalnych korzyści dla których musielibyśmy to robić, 
-					dlatego zostaniemy przy "normalnym" zapisie.
-				-->
-				
-				<input type="text" id="usernaname" class="span4" name="username" placeholder="Login">
-				<input type="password" id="password" class="span4" name="password" placeholder="Has�o">
-				<button type="submit" name="submit" class="btn btn-info btn-block">Zaloguj</button>
-			<!-- Zamykamu formularz. -->
-			<?php echo form_close(); ?>
 		
 		
 

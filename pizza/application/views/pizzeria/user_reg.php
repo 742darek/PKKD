@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="pl" lang="pl">
 <head>
 
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-2" />
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-2" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>

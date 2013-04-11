@@ -8,7 +8,7 @@
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
-<li><a href="<?php echo site_url('pizza/index');?>">Strona GÅ‚Ã³wna</a></li>
+<li><a href="<?php echo site_url('pizza/index');?>">Strona G³ówna</a></li>
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
@@ -19,7 +19,7 @@
 <h3>&nbsp;<br />
   Adres:</h3>
 <p>Olsztyn
-ul. Jana PawÅ‚a II Hala GÅ‚Ã³wna 3/4 tel.798666999</p>
+ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 
 
 
@@ -27,8 +27,8 @@ ul. Jana PawÅ‚a II Hala GÅ‚Ã³wna 3/4 tel.798666999</p>
 </div>
 
 <div id="content">
-&nbsp;<h2>Rejestracja nowego uÅ¼ytkownika </h2>
-<p>Rejestracja w naszym serwisie jest niezbÄ™dna aby mÃ³c wybraÄ‡ lub skomponowaÄ‡ pizze oraz zÅ‚oÅ¼yÄ‡ zamÃ³wienie</p>
+&nbsp;<h2>Rejestracja nowego u¿ytkownika </h2>
+<p>Rejestracja w naszym serwisie jest niezbêdna aby móc wybraæ lub skomponowaæ pizze oraz z³o¿yæ zamówienie</p>
 
 
 
@@ -46,7 +46,7 @@ ul. Jana PawÅ‚a II Hala GÅ‚Ã³wna 3/4 tel.798666999</p>
         <ul>
 
             <li>
-                <label for="nazwa">Podaj nazwÄ™</label><br>
+                <label for="nazwa">Podaj nazwê</label><br>
                 <input type="text" name="nazwa" value="<?php echo set_value('nazwa'); ?>" />
                 <?php echo form_error('nazwa'); ?>
            </li>
@@ -57,7 +57,7 @@ ul. Jana PawÅ‚a II Hala GÅ‚Ã³wna 3/4 tel.798666999</p>
             </li>
 			
 			<li>
-                <label for="cena">Wpisz cene</label><br>
+                <label for="cena">Wpisz cenê</label><br>
                 <input type="cena" name="cena" />
                 <?php echo form_error('cena'); ?>
             </li>
