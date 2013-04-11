@@ -18,6 +18,17 @@ class User_model extends CI_Model
         // to wynik zostanie zwrócony do kontrolera w postaci tablicy, w innym wypadku otrzymamy pusty wynik.
         return $this->db->where(array('username' => $username, 'password' => $password))->get($this->table)->row_array();
     }
+	
+	
+	
+	   public function is_admin($username, $password)
+    {
+        // Jeśli w bazie zostanie znaleziony użytkownik o podanym adresie email i haśle, 
+        // to wynik zostanie zwrócony do kontrolera w postaci tablicy, w innym wypadku otrzymamy pusty wynik.
+        
+		
+	
+    }
 }
  
 /* End of file user_model.php */

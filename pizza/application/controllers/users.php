@@ -35,14 +35,30 @@ class Users extends CI_Controller
         else
         {
             // Jeśli walidacja formularza powiodła się, przypisujemy odpowiednie zmienne z tablicy $_POST do zmiennej $email i $password
-            $email = $this->input->post('email');
+            $username = $this->input->post('username');
             $password = $this->input->post('password');
- 
+			
+
             // Ładujemy wcześniej utworzony model
             $this->load->model('user_model');
  
+            if ($user = $this->user_model->login($username, $password)) 
             // Wywołujemy metodę "login" modelu "user_model" wraz z parametrami i przypisujemy zwrócony wynik do zmiennej $user
-            if ($user = $this->user_model->login($email, $password))
+            {
+			
+			
+                // Jeśli zwrócony wynik nie jest pusty (czyli znaleziono użytkownika o podanym adresie email i haśle),
+                // ustawiamy zmienną sesyjną o nazwie "user_id" na wartość unikalnego identyfikatora użytkownika.
+                $this->session->set_userdata('user_id', $user['id']);
+                // Ustawiamy zmienną flashadata o nazwie success i przypisujemy do niej komunikat o powodzeniu logowania.
+                $this->session->set_flashdata('success', 'Logowanie przebiegło pomyślnie!');
+                // Przekierowujemy użytkownika na stronę ze wszystkimi postami podając w funkcji nazwę kontrolera/metody, która ma zostać wywołana.
+                // W tym wypadku nie ma znaczenia, czy podamy 'posts/index', czy samo 'posts', ponieważ CodeIgniter domyślnie zinterpretuje samo 'posts' jako wywołanie
+                // metody 'index' - jako domyślnej funkcji dla każdego kontrolera.
+               redirect('check/zalogowani');
+            }
+			
+			/*elseif ($user = $this->user_model->login($username, $password, $rights) && $rights==1)
             {
                 // Jeśli zwrócony wynik nie jest pusty (czyli znaleziono użytkownika o podanym adresie email i haśle),
                 // ustawiamy zmienną sesyjną o nazwie "user_id" na wartość unikalnego identyfikatora użytkownika.
@@ -52,15 +68,17 @@ class Users extends CI_Controller
                 // Przekierowujemy użytkownika na stronę ze wszystkimi postami podając w funkcji nazwę kontrolera/metody, która ma zostać wywołana.
                 // W tym wypadku nie ma znaczenia, czy podamy 'posts/index', czy samo 'posts', ponieważ CodeIgniter domyślnie zinterpretuje samo 'posts' jako wywołanie
                 // metody 'index' - jako domyślnej funkcji dla każdego kontrolera.
-                redirect('check/zalogowani');
-            }
+                redirect('check/panel');
+            } */
+			
+			
             else
             {
                 // Jeśli zwrócony wynik jest pusty (czyli nie znaleziono użytkownika o podanym adresie email i haśle),
                 // ustawiamy zmienną flashadata o nazwie error i podajemy komunikat o niepowodzeniu logowania.
                 $this->session->set_flashdata('error', 'Podany login lub hasło są nieprawidłowe!');
                 // Przekierowujemy użytkownika na stronę logowania podając dla funkcji nazwę kontrolera/metody, która ma zostać wywołana
-                //redirect('users/login');
+                redirect('check/zalogowani');
             }
         }
     }

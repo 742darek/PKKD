@@ -28,8 +28,21 @@ public function __construct()
 
  
  $this->load->view('pizzeria/header');
- $this->load->view('pizzeria/user_login');
+ $this->load->view('pizzeria/check');
  $this->load->view('pizzeria/footer');
  
  }
+ 
+ 
+ 		function panel()
+ {
+	
+
+ 
+ $this->load->view('pizzeria/header');
+ $this->load->view('pizzeria/form_prod');
+ $this->load->view('pizzeria/footer');
+ 
+ }
+ 
 		}

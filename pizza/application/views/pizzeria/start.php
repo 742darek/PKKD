@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="pl" lang="pl">
 <head>
 
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-2" />
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-2" />
 
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
 <div id="avmenu">
@@ -38,8 +38,35 @@ ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
 
 
 
+<?php echo form_open(); ?>
 
+<form action="...">
+	<select name="nazwa">
+		<option>Tu wpisz pierwszš możliwoć</option>
+		<option>Tu wpisz drugš możliwoć</option>
+		(...)
+	</select>
 	
+	<button type="submit" name="submit" class="btn btn-info btn-block">Zaloguj</button>
+</form>
+
+<?php echo form_close(); ?>
+
+
+	<legend>Logowanie</legend>     
+			<!-- Otwieramy formularz za pomocÄ funkcji z helpera Form. -->    	
+			<?php echo form_open(); ?>
+				<!-- 
+					RĂłwnieĹź do definicji pĂłl formularza moĹźemy uĹźyÄ funkcji z helpera Form, 
+					ale w tym przypadku nie widaÄ specjalnych korzyĹci dla ktĂłrych musielibyĹmy to robiÄ, 
+					dlatego zostaniemy przy "normalnym" zapisie.
+				-->
+				
+				<input type="text" id="usernaname" class="span4" name="username" placeholder="Login">
+				<input type="password" id="password" class="span4" name="password" placeholder="Hasło">
+				<button type="submit" name="submit" class="btn btn-info btn-block">Zaloguj</button>
+			<!-- Zamykamu formularz. -->
+			<?php echo form_close(); ?>
 		
 		
 
