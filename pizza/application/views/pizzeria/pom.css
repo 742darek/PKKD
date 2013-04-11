@@ -132,9 +132,10 @@ margin: 0 auto;
 padding: 0px 0em 0px 0em;
 width: 790px;
 text-align: center;
-color: #808080;
+color: #000000;
 font-size: 0.9em;height: 190px;
-background: #211d1e url(images/pom_bas.jpg) no-repeat right;border: none;}
+background: #211d1e url(images/pom_bas.jpg) no-repeat ;border: none;
+}
 
 #footer a {
 color: #808080;
@@ -144,6 +145,9 @@ text-decoration: none;
 #footer a:hover {
 text-decoration: underline;
 }
+
+
+
 
 .left {
 margin: 0px 7px 0px 5px;

@@ -5,3 +5,4 @@
 <li><a href="<?php echo site_url('check/zalogowani');?>">Dla zalogowanych</a></li>
 <li><a href="<?php echo site_url('rejestracja');?>">Rejestracja</a></li>
 <li><a href="<?php echo site_url('check/panel');?>">Dla admina</a></li>
+<li><a href="<?php echo site_url('shop');?>">Testowy koszyk</a></li>
