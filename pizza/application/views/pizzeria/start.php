@@ -38,19 +38,7 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 
 
 
-<?php echo form_open(); ?>
 
-<form action="...">
-	<select name="nazwa">
-		<option>Tu wpisz pierwsz¹ mo¿liwoœæ</option>
-		<option>Tu wpisz drug¹ mo¿liwoœæ</option>
-		(...)
-	</select>
-	
-	<button type="submit" name="submit" class="btn btn-info btn-block">Zaloguj</button>
-</form>
-
-<?php echo form_close(); ?>
 
 
 	<legend>Logowanie</legend>     
