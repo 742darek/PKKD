@@ -46,5 +46,8 @@ $route['shopping-cart-view'] = "products/shoppingCartView";
 $route['save-shopping-cart'] = "products/saveCartProducts";
 
 
+
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

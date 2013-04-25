@@ -3,12 +3,12 @@
 <html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="pl" lang="pl">
 <head>
 
-<meta http-equiv="content-type" content="text/html" charset="iso-8859-2" />
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
-<li><a href="<?php echo site_url('pizza/index');?>">Strona Główna</a></li>
+<li><a href="<?php echo site_url('pizza/index');?>">Strona GĹĂłwna</a></li>
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
@@ -19,7 +19,7 @@
 <h3>&nbsp;<br />
   Adres:</h3>
 <p>Olsztyn
-ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
+ul. Jana PawĹa II Hala GĹĂłwna 3/4 tel.798666999</p>
 
 
 
@@ -27,8 +27,8 @@ ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
 </div>
 
 <div id="content">
-&nbsp;<h2>Rejestracja nowego użytkownika </h2>
-<p>Rejestracja w naszym serwisie jest niezbędna aby móc wybrać lub skomponować pizze oraz złożyć zamówienie</p>
+&nbsp;<h2>Rejestracja nowego uĹźytkownika </h2>
+<p>Rejestracja w naszym serwisie jest niezbÄdna aby mĂłc wybraÄ lub skomponowaÄ pizze oraz zĹoĹźyÄ zamĂłwienie</p>
 
 
 
@@ -46,18 +46,18 @@ ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
         <ul>
 
             <li>
-                <label for="username">Podaj nazwę użytkownika</label><br>
+                <label for="username">Podaj nazwÄ uĹźytkownika</label><br>
                 <input type="text" name="username" value="<?php echo set_value('username'); ?>" />
                 <?php echo form_error('username'); ?>
            </li>
            <li>
-                <label for="email">Wpisz swój adres e-mail</label><br>
+                <label for="email">Wpisz swĂłj adres e-mail</label><br>
                 <input type="text" name="email" value="<?php echo set_value('email'); ?>" />
                 <?php echo form_error('email'); ?>
             </li>
 			
 			<li>
-                <label for="password">Wpisz hasło (min. 6 znaków!)</label><br>
+                <label for="password">Wpisz hasĹo (min. 6 znakĂłw!)</label><br>
                 <input type="password" name="password" />
                 <?php echo form_error('password'); ?>
             </li>

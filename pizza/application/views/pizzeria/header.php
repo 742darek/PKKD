@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="pl" lang="pl">
 <head>
 
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-2" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
 
 <title>Pizzeria</title>
@@ -16,12 +16,12 @@
 
 <h3>PIZZERIA PKKD</h3>
 
-<p><strong>"Pizza najlepsza w mieście"</strong><br />
+<p><strong>"Pizza najlepsza w mieĹcie"</strong><br />
 <?php if ($this->session->userdata('user_id')): ?>
 <li><a href="<?php echo site_url('users/logout'); ?>">Wyloguj</a></li>
 <?php endif; ?>
 
-<h2>Welcome Back, <?php echo $this->session->userdata('user_name'); ?>!</h2>
+<h2>Witamy ponownie <?php echo $this->session->userdata('user_name'); ?>!</h2>
 
 </p>
 </div>

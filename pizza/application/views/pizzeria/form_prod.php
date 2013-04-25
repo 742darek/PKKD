@@ -3,12 +3,12 @@
 <html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="pl" lang="pl">
 <head>
 
-<meta http-equiv="content-type" content="text/html" charset="iso-8859-2" />
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
-<li><a href="<?php echo site_url('pizza/index');?>">Strona G³ówna</a></li>
+<li><a href="<?php echo site_url('pizza/index');?>">Strona Główna</a></li>
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
@@ -19,7 +19,7 @@
 <h3>&nbsp;<br />
   Adres:</h3>
 <p>Olsztyn
-ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
+ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
 
 
 
@@ -27,7 +27,7 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 </div>
 
 <div id="content">
-&nbsp;<h2>Panel admina (tutaj sie bêdzie dodawa³o sk³adniki do pizzy, edytowa³o to itd) </h2>
+&nbsp;     <center><h2>Panel admina  </h2></center>
 
 
 
@@ -42,27 +42,26 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 		
 <?php $this->load->helper('form'); ?>
 <?php echo form_open('dodawanie'); ?>
-    <ul id="dodawanie">
-        <ul>
+    <div id="dodawanie"><ul>
 
             <li>
-                <label for="description">Podaj nazwe</label><br>
+                <label for="description">Podaj nazwę</label><br>
                 <input type="text" name="description" value="<?php echo set_value('description'); ?>" />
                 <?php echo form_error('description'); ?>
            </li>
 
            <li>
-                <label for="qty">Podaj ilosc</label><br>
+                <label for="qty">Podaj ilość</label><br>
                 <input type="text" name="qty" value="<?php echo set_value('qty'); ?>" />
                 <?php echo form_error('qty'); ?>
             </li>
            <li>
-                <label for="price">Podaj cene</label><br>
+                <label for="price">Podaj cenę</label><br>
                 <input type="price" name="price" value="<?php echo set_value('price'); ?>" />
                 <?php echo form_error('price'); ?>
             </li>
-			
-			<li>
+            
+            <li>
                 <label for="status">Podaj status</label><br>
                   <input type="text" name="status" value="<?php echo set_value('status'); ?>" />
                 <?php echo form_error('status'); ?>
@@ -73,6 +72,7 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
             </h3>
         </ul>
     </ul>
-<?php echo form_close(); ?>
+<?php echo form_close(); ?></div>
+        
 
 </div>

@@ -29,7 +29,7 @@ public function __construct()
 
  
  $this->load->view('pizzeria/header');
- $this->load->view('pizzeria/check');
+ $this->load->view('pizzeria/start');
  $this->load->view('pizzeria/footer');
  
  }
@@ -51,14 +51,19 @@ public function __construct()
 
 
 
- function koszyk()
- {
-	
+// function cart()
+//  {
+
+
  
- $this->load->view('pizzeria/header');
- $this->load->view('products');
- $this->load->view('pizzeria/footer');
+// 						$data['products'] = $this->product->get_products();
+//                         $this->load->view('pizzeria/header');
+//                         $this->load->view('pizzeria/cart',$data);
+//                         $this->load->view('pizzeria/footer');
  
- }
+//  }
+
+
+ 
  
 		}

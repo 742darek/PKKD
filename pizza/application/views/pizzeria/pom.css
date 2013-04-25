@@ -26,6 +26,12 @@ height: 70px;
 background-color: #000000;
 }
 
+#header h2 {
+width: 700px;
+margin: 0px 0px 0px 15px;
+float: left;
+}
+
 #header h3 {
 width: 700px;
 margin: 0px 0px 0px 15px;
@@ -160,6 +166,18 @@ text-decoration: underline;
 }
 
 
+#dodawanie{
+
+margin-left:100px;
+
+}
+
+
+#dodawanie ul{
+list-style: none;
+
+
+}
 
 
 .left {

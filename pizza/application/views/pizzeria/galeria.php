@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="pl" lang="pl">
 <head>
 
-<meta http-equiv="content-type" content="text/html" charset="iso-8859-2" />
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
 
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
 
@@ -19,7 +19,7 @@
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
-<li><a href="<?php echo site_url('pizza/index');?>">Strona G³ówna</a></li>
+<li><a href="<?php echo site_url('pizza/index');?>">Strona Główna</a></li>
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
@@ -31,7 +31,7 @@
 <h3>&nbsp;<br />
   Adres:</h3>
 <p>Olsztyn
-ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
+ul. Jana Paw³a II Hala Główna 3/4 tel.798666999</p>
 
 </div>
 

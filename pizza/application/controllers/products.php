@@ -5,62 +5,58 @@ class products extends CI_Controller{
         function __construct(){
                                                         parent::__construct();
                                                         $this->load->model('product_model','product');
+                                                        $this->load->library('session');
+                                                        if ( ! $this->session->userdata('user_id'))
+            {
+                // Wyświetlamy stonę błędu, ale równie dobrze możemy zwrócic inny komunikat,
+                // np. taki, który informuje o konieczności zalogowania do aplikacji lub 
+                // przekierować użytkownika do strony logowania.
+                show_404();
+                
+            }
 
         }
 
         function index(){
-                        $this->load->model('user_model');
                         $data['products'] = $this->product->get_products();
-                        $this->load->view('products_view',$data);
+                        $this->load->view('pizzeria/header');
+                        $this->load->view('pizzeria/cart',$data);
+                        $this->load->view('pizzeria/footer');
         }
-
-
-
         function addToCart(){
-                        $insert = array(
+                        $data = array(
                'id'      => $this->input->post('id'),
                'qty'     => $this->input->post('qty'),
                'price'   => $this->input->post('price'),
                'name'    => $this->input->post('description'),
                'imie'    => $this->input->post('imie')
             );
-                        $this->cart->insert($insert);
-                        redirect('products');
+                        $this->cart->insert($data);
                         // redirect(base_url().'index.php/shopping-cart-view');
+                        redirect('products');
         }
+       
 
-
-
-
-
-        function shoppingCartView(){
-                       $this->load->library('session');
-                       if (!$this->session->userdata('user_id')){
-
-                             echo $user_data['user_id'];
-
-                       }
-                       
-                        $data['products'] = $this->cart->contents();
-                        $this->load->view('shopping_cart_view',$data);
-        }
+        // function shoppingCartView(){
+        //                 $data['products'] = $this->cart->contents();
+        //                  // $this->load->view('shopping_cart_view',$data);
+        //                 // $this->load->view('products_view',$data);
+        // }
        
         function saveCartProducts(){
                         $ids = Array();
                         $descriptions = Array();
                         $prices = Array();
                         $qtys = Array();
-                        $imies = Array();
                         $ids = $this->input->post('id');
-                        $descriptions = $this->input->post('desription');
+                        $descriptions = $this->input->post('name');
                         $prices = $this->input->post('price');
                         $qtys = $this->input->post('qty');
                         $imies = $this->input->post('imie');
                         $result = $this->product->save_cart_products($ids,$descriptions,$prices,$qtys,$imies);
                        
-                        if($result){    
-
-                                        $msg="Twoje zamówienie zostało złożone!";
+                        if($result){
+                                        $msg="Zamówienie zostało złożone!";
                                         // $this->cart->destroy();
                                         }
                         else{
@@ -75,7 +71,6 @@ class products extends CI_Controller{
 
 
 
-
         function remove($rowid) {
         
         $this->cart->update(array(
@@ -83,6 +78,15 @@ class products extends CI_Controller{
             'qty' => 0
         ));
         
+        redirect('products');
+        
+    }
+
+
+
+    function destroy() {
+        
+        $this->cart->destroy(); 
         redirect('products');
         
     }

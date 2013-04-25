@@ -20,7 +20,9 @@ class product_model extends CI_Model{
                                                                                                           'description' => $descriptions[$ndx],
                                                                                                           'price' =>$prices[$ndx],
                                                                                                           'qty_ordered' =>$qtys[$ndx],
-                                                                                                          'imie' => $imies[$ndx]);
+                                                                                                          'imie' =>$imies[$ndx]);
+                                                                                                         
+                                                                                                         
                                                         $this->db->insert("order_details",$data);
                                                        
                                                         //update product qty on the products table.

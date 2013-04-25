@@ -1,5 +1,5 @@
 <div id="footer">
-Copyright &copy; 2013 (PKKD) jjhjhjk</div>
+Copyright &copy; 2013 (PKKD)</div>
 
 </div>
 </body>
