@@ -6,13 +6,15 @@ body {
 margin: 0 auto;
 padding: 0;
 font: 76% Verdana,Tahoma,Arial,sans-serif;
-background: #211d1e url(images/body_deg.gif) repeat-x}
+background: #211d1e url(images/body_deg.gif) repeat-x
+}
 #wrap {
 background: #000000;
 color: #ffffff;
 border:  none;
 margin: 0 auto;
-width: 790px;}
+width: 790px;
+}
 
 
 
@@ -20,7 +22,9 @@ width: 790px;}
 clear: both;
 margin: 0px 0em 0px 0em;
 padding: 0;
-height: 70px;background-color: #000000;}
+height: 70px;
+background-color: #000000;
+}
 
 #header h3 {
 width: 700px;
@@ -35,7 +39,8 @@ text-align: center;
 color: #a0a0a0;
 margin: 0px 0px 0px 0px;
 font-size: 0.8em;
-line-height: 1.2em;height: 35px;}
+line-height: 1.2em;
+height: 35px;}
 
 
 
@@ -44,7 +49,7 @@ clear: left;
 float: left;
 width: 150px;
 margin: 0 0 10px 0;
-padding: 0;
+padding: 10px ;
 font-size: 0.9em;
 }
 
@@ -68,7 +73,9 @@ color: #fffff1;
 display: block;
 padding: 6px 0 0 10px;
 background: #67522c;
-border-left: 1px #846837 solid;}	
+border-left: 1px #846837 solid;
+}
+	
 	
 #avmenu li a:hover {
 background: #67522c;
@@ -83,7 +90,8 @@ border-left: 4px #47381e solid;
 float: right;
 width: 150px;
 margin: 0 0 10px 0;
-padding: 0;
+padding-top: 10px;
+padding-left: 20px;
 font-size: 0.9em;
 line-height: 1.5em;
 }
@@ -97,7 +105,8 @@ margin: 0 0 1.5em 0;
 margin: 0em 160px 20px 160px;
 padding: 0 10px 0 10px;
 line-height: 1.6em;
-text-align: left;}
+text-align: left;
+}
 
 #content h2 {
 font-size: 1.5em;
@@ -106,8 +115,8 @@ margin: 0 0 0.5em 0;
 
 #content img {
 padding: 0px;
-display:inline;}
-
+display:inline;
+}
 
 
 h3 {
@@ -131,10 +140,14 @@ clear: both;
 margin: 0 auto;
 padding: 0px 0em 0px 0em;
 width: 790px;
+height: 40px;
 text-align: center;
 color: #000000;
-font-size: 0.9em;height: 190px;
-background: #211d1e url(images/pom_bas.jpg) no-repeat ;border: none;
+font-size: 0.9em;
+height: 190px;
+/*border-bottom: 40px solid #e44d26;*/
+
+background: #211d1e url(images/pom_bas.jpg) no-repeat ;
 }
 
 #footer a {
@@ -177,4 +190,117 @@ font-weight: bold;
 
 .hide {
 display: none;
+}
+
+.section {
+  padding: 40px 0;
+}
+/* line 314, ../sass/screen.sass */
+.section:first-child {
+  border-top: none;
+}
+
+.imageRow {
+  *zoom: 1;
+  margin: 20px 0;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.imageRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 320, ../sass/screen.sass */
+.imageRow .single {
+  float: left;
+}
+/* line 322, ../sass/screen.sass */
+.imageRow .single a {
+  float: left;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 7px;
+  line-height: 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 40px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 332, ../sass/screen.sass */
+.imageRow .single a img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* line 335, ../sass/screen.sass */
+.imageRow .single a:hover {
+  background-color: #8ad459;
+}
+/* line 337, ../sass/screen.sass */
+.imageRow .set {
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 343, ../sass/screen.sass */
+.imageRow .set:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* line 346, ../sass/screen.sass */
+.imageRow .set .single a {
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-right: 0;
+}
+/* line 351, ../sass/screen.sass */
+.imageRow .set .single a:hover {
+  background-color: #8ad459;
+  -webkit-box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 355, ../sass/screen.sass */
+.imageRow .set .single.first a {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }

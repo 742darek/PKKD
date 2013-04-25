@@ -1,0 +1,1 @@
+<p><a href="<?PHP echo base_url(); ?>application/galeria/foto/<?PHP echo $plik; ?>" rel="lightbox[roadtrip]"><img src="<?PHP echo base_url(); ?>application/galeria/foto/<?PHP echo $plik; ?>"/></a></p>

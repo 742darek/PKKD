@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang=en-US">
+<html lang="en-US">
 
 <head>
 	<title>Shop</title>
@@ -51,22 +51,26 @@
 		#cart .remove a {
 			color: red;
 		}
+		#cart .dodaj a{
+			color: red;
+	}
 		</style>
 	
 </head>
 <body>
-
+	
 	<div id="products">
 	<ul>
 	<?php foreach ($products as $product): ?>
 		<li>
 			<?php echo form_open('shop/add'); ?>
+			<caption>Produkty</caption>
 			<div class="name"><?php echo $product->name; ?></div>
 			<div class="thumb">
 			<?php echo img(array(
 			
 				'src' => 'images/' . $product->image,
-				'class' => 'thumb',
+				'class' => 'thumb',	
 				'alt' => $product->name
 			)); ?>
 			</div>
@@ -82,11 +86,15 @@
 					); ?>
 				
 				<?php endif; ?>
+
+				<td>
+                        <input type = "text"  name ="qty" style ="width:50px;" value = "1"/>
+                        </td>
 			
 			</div>
 			
 			<?php echo form_hidden('id', $product->id); ?>
-			<?php echo form_submit('action', 'Add to Cart'); ?>
+			<?php echo form_submit('action', 'Dodaj do koszyka'); ?>
 			<?php echo form_close(); ?>
 		
 		</li>
@@ -94,44 +102,32 @@
 	</ul>
 	</div>
 	
-	<?php if ($cart = $this->cart->contents()): ?>
-	<div id="cart"> 
-		<table>
-		<caption>Shopping Cart</caption>
-		<thead>
-			<tr>
-				<th>Item Name</th>
-				<th>Option</th>
-				<th>Price</th>
-				<th></th>
-			</tr>
-		</thead>
-		<?php foreach ($cart as $item): ?>
-			<tr>
-				<td><?php echo $item['name']; ?></td>
-				<td>
-				<?php if ($this->cart->has_options($item['rowid'])) {
-				
-						foreach($this->cart->product_options($item['rowid']) as $option => $value)
-						
-						{
-							echo $option . ": <em>" . $value . "</em>";
-						}
-				} ?>
-				</td>
-				<td>$<?php echo $item['subtotal']; ?></td>
-				<td class="remove">
-					<?php echo anchor('shop/remove/'.$item['rowid'],'X'); ?>
-				</td>
-			</tr>
-		<?php endforeach; ?>
-		<tr class="total">
-		<td colspan="2"><strong>Total</strong></td>
-		<td>$<?php echo $this->cart->total(); ?></td>
-		</tr>
-	</table>
-	</div>
-	<?php endif; ?>
+	
+
+
+
+
+
+
+
+
+	
 	
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

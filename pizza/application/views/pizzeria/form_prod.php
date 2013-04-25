@@ -8,7 +8,7 @@
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
-<li><a href="<?php echo site_url('pizza/index');?>">Strona G³ówna</a></li>
+<li><a href="<?php echo site_url('pizza/index');?>">Strona GÂ³Ã³wna</a></li>
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
@@ -19,7 +19,7 @@
 <h3>&nbsp;<br />
   Adres:</h3>
 <p>Olsztyn
-ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
+ul. Jana PawÂ³a II Hala GÂ³Ã³wna 3/4 tel.798666999</p>
 
 
 
@@ -27,7 +27,7 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 </div>
 
 <div id="content">
-&nbsp;<h2>Panel admina (tutaj sie bêdzie dodawa³o sk³adniki do pizzy, edytowa³o to itd) </h2>
+&nbsp;<h2>Panel admina (tutaj sie bÃªdzie dodawaÂ³o skÂ³adniki do pizzy, edytowaÂ³o to itd) </h2>
 
 
 
@@ -40,26 +40,32 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
 
 	
 		
-			<?php $this->load->helper('form'); ?>
+<?php $this->load->helper('form'); ?>
 <?php echo form_open('dodawanie'); ?>
     <ul id="dodawanie">
         <ul>
 
             <li>
-                <label for="nazwa">Podaj nazwê</label><br>
-                <input type="text" name="nazwa" value="<?php echo set_value('nazwa'); ?>" />
-                <?php echo form_error('nazwa'); ?>
+                <label for="description">Podaj nazwe</label><br>
+                <input type="text" name="description" value="<?php echo set_value('description'); ?>" />
+                <?php echo form_error('description'); ?>
            </li>
+
            <li>
-                <label for="typ">Podaj typ</label><br>
-                <input type="text" name="typ" value="<?php echo set_value('typ'); ?>" />
-                <?php echo form_error('typ'); ?>
+                <label for="qty">Podaj ilosc</label><br>
+                <input type="text" name="qty" value="<?php echo set_value('qty'); ?>" />
+                <?php echo form_error('qty'); ?>
+            </li>
+           <li>
+                <label for="price">Podaj cene</label><br>
+                <input type="price" name="price" value="<?php echo set_value('price'); ?>" />
+                <?php echo form_error('price'); ?>
             </li>
 			
 			<li>
-                <label for="cena">Wpisz cenê</label><br>
-                <input type="cena" name="cena" />
-                <?php echo form_error('cena'); ?>
+                <label for="status">Podaj status</label><br>
+                  <input type="text" name="status" value="<?php echo set_value('status'); ?>" />
+                <?php echo form_error('status'); ?>
             </li>
         <ul>
             <h3 class="submit">

@@ -21,14 +21,7 @@ class User_model extends CI_Model
 	
 	
 	
-	   public function is_admin($username, $password)
-    {
-        // Jeśli w bazie zostanie znaleziony użytkownik o podanym adresie email i haśle, 
-        // to wynik zostanie zwrócony do kontrolera w postaci tablicy, w innym wypadku otrzymamy pusty wynik.
-        
-		
-	
-    }
+	 
 }
  
 /* End of file user_model.php */

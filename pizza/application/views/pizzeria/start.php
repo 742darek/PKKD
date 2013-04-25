@@ -6,12 +6,22 @@
 <meta http-equiv="content-type" content="text/html" charset="iso-8859-2" />
 
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
+
+
+
+
+
+
+
+
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
 <li><a href="<?php echo site_url('pizza/index');?>">Strona Główna</a></li>
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
+
+
 
 </ul>
 </div>
@@ -33,6 +43,10 @@ ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
 <p>Bazując na oryginalnych recepturach, używając naturalnych składników najwyższej jakości, komponujemy dania wyjątkowe, pełne ciekawych pomysłów i nowych smaków w atrakcyjnych cenach.</p>
 
 <p>Przede wszystkim sam Klient może utworzyć swoją własną kompozycję pizzy wedle swojego uznania. Oferujemy wiele składników do tej czynności, wszystko po to aby się dobrze bawić w naszym serwisie tworząc coraz to bardziej wyszukane i egzotyczne kompozycje ! </p>
+
+
+
+
 
 <p>&nbsp;</p>
 

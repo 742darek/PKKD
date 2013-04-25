@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<meta http-equiv="content-type" content="text/html" charset="iso-8859-2" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
-<li><a href="<?php echo site_url('pizza/index');?>">Witamy</a></li>
+<li><a href="<?php echo site_url('pizza/index');?>">Strona Główna</a></li>
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
@@ -35,26 +35,10 @@
 
 	
 		
-			<legend>Logowanie</legend>     
-			<!-- Otwieramy formularz za pomocą funkcji z helpera Form. -->    	
-			<?php echo form_open(); ?>
-				<!-- 
-					Również do definicji pól formularza możemy użyć funkcji z helpera Form, 
-					ale w tym przypadku nie widać specjalnych korzyści dla których musielibyśmy to robić, 
-					dlatego zostaniemy przy "normalnym" zapisie.
-				-->
-				
-				<input type="text" id="usernaname" class="span4" name="username" placeholder="username">
-				<input type="password" id="password" class="span4" name="password" placeholder="Hasło">
-				<button type="submit" name="submit" class="btn btn-info btn-block">Zaloguj</button>
-			<!-- Zamykamu formularz. -->
-			<?php echo form_close(); ?>
+		
 			
 			
-			<?php if ($this->session->userdata('user_id')): ?>
-                <li><a href="<?php echo site_url('users/logout'); ?>">Wyloguj</a></li>
-             
-              <?php endif; ?>
+			
 			  
 			  
 			  

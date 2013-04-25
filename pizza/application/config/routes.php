@@ -40,6 +40,10 @@
 
 $route['default_controller'] = "blog";
 $route['404_override'] = '';
+$route['products'] = "products";
+$route['product-add-to-cart'] = "products/addToCart";
+$route['shopping-cart-view'] = "products/shoppingCartView";
+$route['save-shopping-cart'] = "products/saveCartProducts";
 
 
 /* End of file routes.php */

@@ -21,7 +21,7 @@
 <li><a href="<?php echo site_url('users/logout'); ?>">Wyloguj</a></li>
 <?php endif; ?>
 
-
+<h2>Welcome Back, <?php echo $this->session->userdata('user_name'); ?>!</h2>
 
 </p>
 </div>

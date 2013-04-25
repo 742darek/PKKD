@@ -1,6 +1,18 @@
 <?php
 class Cart_test extends CI_Controller
+
+
+
 {
+
+	public function __construct() 
+	
+	{
+		parent::__construct();
+		
+		$this->load->model('Item');
+		
+	}
 
 	function add()
 	
@@ -17,6 +29,8 @@ class Cart_test extends CI_Controller
 		
 		$this->cart->insert($data);
 		echo "add() called";
+		echo "<pre>";
+		print_r($data);
 	
 	}
 	
@@ -28,6 +42,18 @@ class Cart_test extends CI_Controller
 		
 		echo "<pre>";
 		print_r($cart);
+
+
+
+
+		foreach ( $this->cart->contents() as $cart )
+{
+  $insert['name'] = $cart['name'];
+  $insert['qty'] = $cart['qty'];
+  $insert['price'] = $cart['price'];
+  $this->db->insert('products', $insert);
+} 
+
 	
 	}
 	
@@ -37,17 +63,33 @@ class Cart_test extends CI_Controller
 	{
 		$data = array(  
 		
-			'id' => '56',
+			'id' => '59',
 			'name' => 'Glasses',
-			'qty' => 1,
-			'price' => 45.99,
-			'options' => array ('Color' => 'black'));
+			 'qty' => '1',
+			'price' => '45.99'
+			 );
+
+		// 'options' => array ('Color' => 'black')
 			
 			
 		
 		$this->cart->insert($data);
+		$this->db->insert( 'products', $data );
+
 		echo "add() called";
+
+
 	
+	}
+	
+
+	function add3(){
+
+		// $item_id = $this->input->post('item_id');
+		// $purchase_id = $this->input->post('purchase_id');
+		// $ip_address = $this->input->post('ip_address');
+		$this->Item->log_download();
+
 	}
 	
 	

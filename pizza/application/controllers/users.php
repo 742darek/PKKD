@@ -3,11 +3,11 @@
 class Users extends CI_Controller
 {
  public function __construct()
-	{
-		parent::__construct();
-		// Ładujemy bibliotekę sesji
-		$this->load->library('session');
-	}
+    {
+        parent::__construct();
+        // Ładujemy bibliotekę sesji
+        $this->load->library('session');
+    }
     public function login()
     {
         // Ładujemy bibliotekę walidacji formularza
@@ -17,7 +17,7 @@ class Users extends CI_Controller
         $this->form_validation->set_error_delimiters('<div class="alert alert-error"><a class="close" data-dismiss="alert" href="#">×</a>', '</div>');
  
         // Ustalamy reguły walidacji dla formularza
-		$this->form_validation->set_rules('username', 'Login', 'required|trim|xss_clear');
+        $this->form_validation->set_rules('username', 'Login', 'required|trim|xss_clear');
         $this->form_validation->set_rules('password', 'Hasło', 'required|trim|sha1');
  
         // Sprawdzamy, czy formularz został wysłany i czy wystąpiły błędy walidacji.
@@ -37,7 +37,7 @@ class Users extends CI_Controller
             // Jeśli walidacja formularza powiodła się, przypisujemy odpowiednie zmienne z tablicy $_POST do zmiennej $email i $password
             $username = $this->input->post('username');
             $password = $this->input->post('password');
-			
+
 
             // Ładujemy wcześniej utworzony model
             $this->load->model('user_model');
@@ -45,11 +45,14 @@ class Users extends CI_Controller
             if ($user = $this->user_model->login($username, $password)) 
             // Wywołujemy metodę "login" modelu "user_model" wraz z parametrami i przypisujemy zwrócony wynik do zmiennej $user
             {
-			
-			
+
+
                 // Jeśli zwrócony wynik nie jest pusty (czyli znaleziono użytkownika o podanym adresie email i haśle),
                 // ustawiamy zmienną sesyjną o nazwie "user_id" na wartość unikalnego identyfikatora użytkownika.
                 $this->session->set_userdata('user_id', $user['id']);
+                $this->session->set_userdata('user_rights', $user['rights']);
+                $this->session->set_userdata('user_name', $user['username']);
+                $this->session->set_userdata('e_mail', $user['email']);
                 // Ustawiamy zmienną flashadata o nazwie success i przypisujemy do niej komunikat o powodzeniu logowania.
                 $this->session->set_flashdata('success', 'Logowanie przebiegło pomyślnie!');
                 // Przekierowujemy użytkownika na stronę ze wszystkimi postami podając w funkcji nazwę kontrolera/metody, która ma zostać wywołana.
@@ -57,8 +60,8 @@ class Users extends CI_Controller
                 // metody 'index' - jako domyślnej funkcji dla każdego kontrolera.
                redirect('check/zalogowani');
             }
-			
-			/*elseif ($user = $this->user_model->login($username, $password, $rights) && $rights==1)
+
+            /*elseif ($user = $this->user_model->login($username, $password, $rights) && $rights==1)
             {
                 // Jeśli zwrócony wynik nie jest pusty (czyli znaleziono użytkownika o podanym adresie email i haśle),
                 // ustawiamy zmienną sesyjną o nazwie "user_id" na wartość unikalnego identyfikatora użytkownika.
@@ -70,8 +73,8 @@ class Users extends CI_Controller
                 // metody 'index' - jako domyślnej funkcji dla każdego kontrolera.
                 redirect('check/panel');
             } */
-			
-			
+
+
             else
             {
                 // Jeśli zwrócony wynik jest pusty (czyli nie znaleziono użytkownika o podanym adresie email i haśle),
