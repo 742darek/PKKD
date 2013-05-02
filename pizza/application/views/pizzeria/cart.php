@@ -12,10 +12,10 @@
                         border: 1px; solid #ddd; background-color: #eee;
                         -moz-border-radius: 4px; -webkit-border-radius: 4px;
                         color: black;
-                        margin:0 0 0 60px;
+                        margin:20px 0 40px 60px;
                 }
                #cart table{
-                width: 320px; border-collapse: collapse;
+                width: 320px; border-collapse: collapse ;
                         text-align: left;
                 }
                 #cart th{
@@ -42,14 +42,7 @@
 </div>
 
 <div id="extras">
-<h3>&nbsp;<br />
-  Adres:</h3>
-<p>Olsztyn
-ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
-
-
-
-
+<?php $this->load->view('pizzeria/extras'); ?>
 </div>
 
 
@@ -64,7 +57,8 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
                 <th>Nazwa</th>
                 <th>Cena</th>
                 <th>Ilość</th>
-                <th>Nick</th>
+                <!-- <th>Nick</th> -->
+                <!-- <th>Adres</th> -->
                 <th>Akcja</th>
                 </tr>
                      <?php foreach($products as $product){ ?>
@@ -80,14 +74,17 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
                         </td>
                         <td>
                         <?php echo $product['price'] ?>
-                        <input type = "hidden" name = "price" value = "<?php echo $product['price'] ?>"/>
+                        <input type = "hidden" name = "price" value = "<?php echo $product['price'] ?>"/>zł
                         </td>
+                        
                         <td>
                         <input type = "text" name ="qty" style ="background-color:#eee; width:30px;" value = "1"/>
                         </td>
+
                         
                       
-                        <td><?php echo $this->session->userdata('user_name'); ?></td>
+                       <!--  <td><?php echo $this->session->userdata('user_name'); ?></td>
+                        <td><?php echo $this->session->userdata('a_dres'); ?></td> -->
                         
                          
                         <td><input type = "submit" value ="Dodaj do koszyka" /></td> 
@@ -140,6 +137,7 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
                                         <th>Ilość</th>
                                         <th>Cena</th>
                                         <th>Nick</th>
+                                        <th>Adres</th>
                         </tr>
 
                         <?php foreach ($cart as $product): ?>
@@ -170,7 +168,7 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
                         </td>
                          <td>
                         <?php echo $product['price'] ?>
-                        <input type = "hidden"  name ="price[]" style ="width:50px;" value = "<?php echo $product['price']?>"/>
+                        <input type = "hidden"  name ="price[]" style ="width:50px;" value = "<?php echo $product['price']?>"/>zł
                         </td>
 
                         
@@ -178,6 +176,9 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
                                         <?php echo $this->session->userdata('user_name'); ?>
                                         <input type = "hidden"  name ="imie[]" style ="width:50px;" value = "<?php echo $this->session->userdata('user_name'); ?>"/>
                                         </td>
+                        <td><?php echo $this->session->userdata('a_dres'); ?>
+                        <input type = "hidden"  name ="adres[]" style ="width:50px;" value = "<?php echo $this->session->userdata('a_dres'); ?>"/>
+                        </td>
     
                         <!-- <td>$<?php echo $product['subtotal']; ?></td> -->
                         <td class="remove">
@@ -188,7 +189,7 @@ ul. Jana Paw³a II Hala G³ówna 3/4 tel.798666999</p>
         
                         <tr class="total">
                         <td colspan="2"><strong>Razem do zapłaty</strong></td>
-                        <td><?php echo $this->cart->total(); ?>zł</td>
+                        <td><?php echo $this->cart->total(); ?>&nbsp;zł</td>
                         <input type = "submit" value = "Złóż zamówienie"/>
                         </form>
                         </tr>

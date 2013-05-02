@@ -16,14 +16,7 @@
 </div>
 
 <div id="extras">
-<h3>&nbsp;<br />
-  Adres:</h3>
-<p>Olsztyn
-ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
-
-
-
-
+<?php $this->load->view('pizzeria/extras'); ?>
 </div>
 
 <div id="content">
@@ -38,9 +31,7 @@ ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
 
 
 
-	
-		
-			<?php $this->load->helper('form'); ?>
+	<div id="rejestracja"> <?php $this->load->helper('form'); ?>
 <?php echo form_open('rejestracja'); ?>
     <ul id="rejestracja">
         <ul>
@@ -55,18 +46,26 @@ ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
                 <input type="text" name="email" value="<?php echo set_value('email'); ?>" />
                 <?php echo form_error('email'); ?>
             </li>
-			
-			<li>
+            
+            <li>
                 <label for="password">Wpisz hasło (min. 6 znaków!)</label><br>
                 <input type="password" name="password" />
                 <?php echo form_error('password'); ?>
             </li>
+            <li>
+                <label for="adres">Podaj nazwę ulicy</label><br>
+                <input type="adres" name="adres" />
+                <?php echo form_error('adres'); ?>
+            </li>
         <ul>
             <h3 class="submit">
-                <input type="submit" value="Rejestracja" />
+                <div class="submit"><input type="submit" value="Rejestracja" /></div>
+                
             </h3>
         </ul>
     </ul>
-<?php echo form_close(); ?>
+<?php echo form_close(); ?></div>
+		
+		
 
 </div>

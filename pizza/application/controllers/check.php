@@ -20,6 +20,7 @@ public function __construct()
 				show_404();
 				
 			}
+
 		}
 
 
@@ -44,24 +45,10 @@ public function __construct()
 
  
  $this->load->view('pizzeria/header');
- $this->load->view('pizzeria/form_prod');
+ $this->load->view('pizzeria/adm');
  $this->load->view('pizzeria/footer');
  
  }
-
-
-
-// function cart()
-//  {
-
-
- 
-// 						$data['products'] = $this->product->get_products();
-//                         $this->load->view('pizzeria/header');
-//                         $this->load->view('pizzeria/cart',$data);
-//                         $this->load->view('pizzeria/footer');
- 
-//  }
 
 
  
