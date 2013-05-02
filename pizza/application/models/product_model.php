@@ -11,7 +11,7 @@ class product_model extends CI_Model{
                                         $result = $this->db->get($this->table);
                                         return $result->result_array();
           }
-          function save_cart_products($ids,$descriptions,$prices,$qtys,$imies,$adress){
+          function save_cart_products($ids,$descriptions,$prices,$qtys,$imies){
                                         $this->db->trans_begin();
                                         $ndx=0;
                                         foreach($ids as $id){
@@ -20,8 +20,7 @@ class product_model extends CI_Model{
                                                                                                           'description' => $descriptions[$ndx],
                                                                                                           'price' =>$prices[$ndx],
                                                                                                           'qty_ordered' =>$qtys[$ndx],
-                                                                                                          'imie' =>$imies[$ndx],
-                                                                                                          'adres' => $adress[$ndx]);
+                                                                                                          'imie' =>$imies[$ndx]);
                                                                                                          
                                                                                                          
                                                         $this->db->insert("order_details",$data);

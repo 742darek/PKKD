@@ -738,7 +738,7 @@ ol ul {
 }
 
 li {
-  line-height: 15px;
+  line-height: 20px;
 }
 
 ul.unstyled,
@@ -1081,7 +1081,7 @@ input[type="radio"],
 input[type="checkbox"] {
   width: auto;
 }
-button type
+
 select,
 input[type="file"] {
   height: 30px;

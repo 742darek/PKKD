@@ -5,41 +5,25 @@
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
-<link rel="shortcut icon" href="<?PHP echo base_url(); ?>application/views/pizzeria/images/favicon.ico" />
-<title>Pizzeria</title>
-<!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    
-    <!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<title>Pizzeria</title>
+
 </head>
 
 <body><div id="wrap">
 
-<div id="header"><!-- <br /> -->
+<div id="header"><br />
 
-<p>PIZZERIA PKKD</p>
+<h3>PIZZERIA PKKD</h3>
 
-
-
-<!-- // <?php if ($this->session->userdata('user_id')): ?> -->
-<ul><li><a href="<?php echo site_url('users/logout'); ?>">Wyloguj</a></li></ul>
-
-
-<!-- // <?php endif; ?> -->
+<p><strong>"Pizza najlepsza w mieście"</strong><br />
 <?php if ($this->session->userdata('user_id')): ?>
-<h3>Witamy ponownie <?php echo $this->session->userdata('user_name'); ?>!</h3>
-<?php endif; ?> 
+<li><a href="<?php echo site_url('users/logout'); ?>">Wyloguj</a></li>
+<?php endif; ?>
 
+<h2>Witamy ponownie <?php echo $this->session->userdata('user_name'); ?>!</h2>
+
+</p>
 </div>
 
-
-
-
-<div id="obraz"><img src="<?PHP echo base_url(); ?>application/views/pizzeria/images/obraz.png"width="790" height="228" alt=""  />
-</div>
-
+<img src="<?PHP echo base_url(); ?>application/views/pizzeria/images/obraz.png"width="790" height="228" alt=""  />

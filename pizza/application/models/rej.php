@@ -11,10 +11,10 @@ function __construct()
 
 
 
-    public function dodaj($username, $email,$password,$adres)
+    public function dodaj($username, $email,$password)
     {
-        $query_str = "INSERT INTO users (username, email, password, adres, rights) VALUES (?, ?, ?, ?, 0)";
-		$this->db->query($query_str, array($username, $email, $password, $adres));
+        $query_str = "INSERT INTO users (username, email, password, rights) VALUES (?, ?, ?, 0)";
+		$this->db->query($query_str, array($username, $email, $password));
     }
 }
  

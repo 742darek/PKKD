@@ -28,7 +28,11 @@
 </div>
 
 <div id="extras">
-<?php $this->load->view('pizzeria/extras'); ?>
+<h3>&nbsp;<br />
+  Adres:</h3>
+<p>Olsztyn
+ul. Jana Paw³a II Hala Główna 3/4 tel.798666999</p>
+
 </div>
 
 <div id="content">

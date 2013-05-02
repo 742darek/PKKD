@@ -53,7 +53,6 @@ class Users extends CI_Controller
                 $this->session->set_userdata('user_rights', $user['rights']);
                 $this->session->set_userdata('user_name', $user['username']);
                 $this->session->set_userdata('e_mail', $user['email']);
-                $this->session->set_userdata('a_dres', $user['adres']);
                 // Ustawiamy zmienną flashadata o nazwie success i przypisujemy do niej komunikat o powodzeniu logowania.
                 $this->session->set_flashdata('success', 'Logowanie przebiegło pomyślnie!');
                 // Przekierowujemy użytkownika na stronę ze wszystkimi postami podając w funkcji nazwę kontrolera/metody, która ma zostać wywołana.

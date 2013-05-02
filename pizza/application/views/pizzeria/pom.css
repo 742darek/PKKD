@@ -13,58 +13,40 @@ background: #000000;
 color: #ffffff;
 border:  none;
 margin: 0 auto;
-width:790px;
+width: 790px;
 }
 
 
 
 #header {
-margin: 0 auto;
-height: 80px;
-width: 790px;
+clear: both;
+margin: 0px 0em 0px 0em;
+padding: 0;
+height: 70px;
 background-color: #000000;
-
 }
 
-
-#header ul{
-
-  list-style: none;
-}
-
-
-#header li a{
-
-  color: white;
-  margin-left: 650px;
-  margin-top: 30px;
-}
-
-
-#header p{
-
-font-weight: bold;
-padding-top: 10px;
- margin-top: 0px;
- margin-right: 0;
- margin-left: 20px;
- margin-bottom: 0;
- }
-
-
-
-
-/*#header h2 {
+#header h2 {
 width: 700px;
 margin: 0px 0px 0px 15px;
 float: left;
-}*/
-
-#header h3 {
-  float: left;
-  margin-left: 20px;
 }
 
+#header h3 {
+width: 700px;
+margin: 0px 0px 0px 15px;
+float: left;
+}
+
+#header p {
+width: 500px;
+float: right;
+text-align: center;
+color: #a0a0a0;
+margin: 0px 0px 0px 0px;
+font-size: 0.8em;
+line-height: 1.2em;
+height: 35px;}
 
 
 
@@ -83,7 +65,6 @@ width: 150px;
 margin: 0 0 20px 0;
 padding: 0;
 font-size: 1.1em;
-
 }	
 
 #avmenu li {
@@ -99,46 +80,13 @@ display: block;
 padding: 6px 0 0 10px;
 background: #67522c;
 border-left: 1px #846837 solid;
-border-radius: 4px;
-  
 }
-
+	
 	
 #avmenu li a:hover {
 background: #67522c;
 color: #fffff1;
-border-left: 10px #47381e solid;
-
-}
-
-
-#panel ul{
-  
-list-style: none;
-
-}
-
-#panel li{
-
-  float: left;
-  padding-top: 20px;
-  padding-left: 20px;
-  text-align: center;
-}
-
-
-#panel li a{
-
-
-height: 20px;
-
-text-decoration: none;
-color: #fffff1;
-display: block;
-padding: 6px 0 0 0px;
-background: #67522c;
-border-left: 5px #846837 solid;
-border-radius: 4px;
+border-left: 4px #47381e solid;
 }
 
 
@@ -146,43 +94,22 @@ border-radius: 4px;
 
 #extras {
 float: right;
-width: 120px;
-height: 130px;
-margin: 10px 10px 10px 0;
+width: 150px;
+margin: 0 0 10px 0;
 padding-top: 10px;
 padding-left: 20px;
 font-size: 0.9em;
 line-height: 1.5em;
-background-color: gray;
-border-radius: 20px 20px 20px 20px;
 }
-
 
 #extras p {
 margin: 0 0 1.5em 0;
-color: white;
-text-shadow: 3px 3px 5px black;
-
-}
-
-
-#extras a{
-text-decoration: none;
-color: black;
-font-weight: bold;
-}
-
-
-
-#extras a:hover{
-text-decoration: none;
-color: white;
 }
 
 
 #content {
-margin: 0em 170px 20px 180px;
-padding: 0 10px 0 0px;
+margin: 0em 160px 20px 160px;
+padding: 0 10px 0 10px;
 line-height: 1.6em;
 text-align: left;
 }
@@ -197,49 +124,6 @@ padding: 0px;
 display:inline;
 }
 
-/*#content table{
-  margin-top: 30px;
-  margin-left: 140px;
-}
-*/
-
-.table{
-
-  margin-left: -140px;
-}
-
-
-
-.produkty{
-
-margin: 0em 170px 20px 180px;
-padding: 0 10px 0 0px;
-}
-
-/*#content legend{
-  margin-top: 100px;
-  margin-left: 30px;
-}
-
-#content input{
-  margin-left: 30px;
-}*/
-
-
-.logowanie{
- margin-top: 60px;
-}
-
-
-#rejestracja ul li{
-list-style: none;
-}
-
-
-.submit{
-padding-right: 40px;
-
-}
 
 h3 {
 font-size: 1.3em;
@@ -257,7 +141,6 @@ color: #b6952a;
 }
 
 
-
 #footer {
 clear: both;
 margin: 0 auto;
@@ -273,19 +156,14 @@ height: 190px;
 background: #211d1e url(images/pom_bas.jpg) no-repeat ;
 }
 
-/*#footer a {
+#footer a {
 color: #808080;
 text-decoration: none;
 }
 
 #footer a:hover {
 text-decoration: underline;
-}*/
-
-#footer p{
-  padding-top: 15px;
 }
-
 
 
 #dodawanie{
@@ -342,8 +220,7 @@ display: none;
 
 .imageRow {
   *zoom: 1;
-  margin: 20px;
-
+  margin: 20px 0;
 }
 /* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .imageRow:after {

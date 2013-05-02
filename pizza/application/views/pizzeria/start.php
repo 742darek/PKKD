@@ -27,15 +27,15 @@
 </div>
 
 <div id="extras">
-
-<?php $this->load->view('pizzeria/extras'); ?>
+<h3>&nbsp;<br />
+  Adres:</h3>
+<p>Olsztyn
+ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
 
 </div>
 
 <div id="content">
 &nbsp;<h2>Witamy na naszej stronie ! </h2>
-
-
 <p>Pizza to potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie. W wersji podstawowej jest to płaski placek z wytrawnego ciasta drożdżowego (focaccia), posmarowany sosem pomidorowym, posypany tartym serem mozzarella i ziołami, pieczony w bardzo mocno nagrzanym piecu.</p>
 
 <p>Pizzę podaje się na gorąco, lecz rozpowszechnione jest jedzenie jej również na zimno. Tradycyjnym miejscem spożywania pizzy są pizzerie, lokale gastronomiczne specjalizujące się w przyrządzaniu i serwowaniu pizzy. </p>

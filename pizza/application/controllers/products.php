@@ -4,7 +4,7 @@ class products extends CI_Controller{
 
         function __construct(){
                                                         parent::__construct();
-                                                        $this->load->model('product_model');
+                                                        $this->load->model('product_model','product');
                                                         $this->load->library('session');
                                                         if ( ! $this->session->userdata('user_id'))
             {
@@ -18,7 +18,7 @@ class products extends CI_Controller{
         }
 
         function index(){
-                        $data['products'] = $this->product_model->get_products();
+                        $data['products'] = $this->product->get_products();
                         $this->load->view('pizzeria/header');
                         $this->load->view('pizzeria/cart',$data);
                         $this->load->view('pizzeria/footer');
@@ -29,8 +29,7 @@ class products extends CI_Controller{
                'qty'     => $this->input->post('qty'),
                'price'   => $this->input->post('price'),
                'name'    => $this->input->post('description'),
-               'imie'    => $this->input->post('imie'),
-               'adres'   => $this->input->post('adres')
+               'imie'    => $this->input->post('imie')
             );
                         $this->cart->insert($data);
                         // redirect(base_url().'index.php/shopping-cart-view');
@@ -54,20 +53,18 @@ class products extends CI_Controller{
                         $prices = $this->input->post('price');
                         $qtys = $this->input->post('qty');
                         $imies = $this->input->post('imie');
-                        $adress = $this->input->post('adres');
-                        $result = $this->product_model->save_cart_products($ids,$descriptions,$prices,$qtys,$imies,$adress);
+                        $result = $this->product->save_cart_products($ids,$descriptions,$prices,$qtys,$imies);
                        
                         if($result){
                                         $msg="Zamówienie zostało złożone!";
-                                         // $this->cart->destroy();
+                                        // $this->cart->destroy();
                                         }
                         else{
                                         $msg="Save Failed..."; 
                                         }                 
                                                        
                         $data=array('msg' => $msg);
-                        $this->session->set_userdata('user',$data);   
-
+                        $this->session->set_userdata('user',$data);    
                         // redirect(base_url().'index.php/shopping-cart-view');
                         redirect('products');
         }   

@@ -1,28 +1,6 @@
 <div id="footer">
-<p>Copyright &copy; <?php 
+Copyright &copy; 2013 (PKKD)</div>
 
-$rok="2013";
-$rokb=date("Y");
-
-
-
-if ($rok<$rokb){
-
-	echo "$rok - $rokb"; 
-}
-
-else {
-
-	echo "$rok";
-}
-?>&nbsp;(PKKD)</p>
-
-
-
-
-
-
-</div>
 </div>
 </body>
 </html>
