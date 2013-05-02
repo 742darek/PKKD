@@ -9,9 +9,7 @@
 
 
 
-<script type="text/javascript" src="<?PHP echo base_url(); ?>application/galeria/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="<?PHP echo base_url(); ?>application/galeria/js/lightbox.js"></script>
-<link rel="stylesheet" href="<?PHP echo base_url(); ?>application/galeria/css/lightbox.css" type="text/css" media="screen" />
+
 
 
 
@@ -24,26 +22,18 @@
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
 
+
 </ul>
 </div>
 
 <div id="extras">
+
 <?php $this->load->view('pizzeria/extras'); ?>
+
 </div>
 
 <div id="content">
-
-
-
-
-<div class="section" id="example">
-
-<h3>Image set</h3>
-
-<div class="imageRow">
-  	<div class="set">
-  	  <div class="single first"> 
-<?PHP echo $galeria; ?>
+&nbsp; <h2>Panel admina</h2>
 
 
 
@@ -52,21 +42,18 @@
 
 
 
-  	</div>
-  </div>
+<div id="panel">
+<ul><li><a href="<?php echo site_url('dodawanie');?>">Dodaj produkty</a></li>
 
-</div>  	
+<li><a href="<?php echo site_url('get');?>">Produkty</a></li>
+<li><a href="<?php echo site_url('orders');?>">Zamówienia</a></li>
+</ul>
 
-</div>  	
-
-
-
-
+</div>    
 
 
 
 
-<p>&nbsp;</p>
 
 		
 		

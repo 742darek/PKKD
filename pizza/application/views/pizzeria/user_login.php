@@ -16,31 +16,19 @@
 </div>
 
 <div id="extras">
-<h3>&nbsp;<br />
-  Adres:</h3>
-<p>Olsztyn
-ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
-
-
-
+<?php $this->load->view('pizzeria/extras'); ?>
 
 
 </div>
 
 <div id="content">
-&nbsp;<h2>Witamy na naszej stronie ! </h2>
-<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
 
-<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
-
-<p>&nbsp;</p>
+&nbsp;<h2>Logowanie </h2>
+<p>Zaloguj się aby móc skorzystać z koszyka</p>
 
 
-
-
-	
-		
-			<legend>Logowanie</legend>     
+<div class="logowanie">
+			   
 			<!-- Otwieramy formularz za pomocÄ… funkcji z helpera Form. -->    	
 			<?php echo form_open(); ?>
 				<!-- 
@@ -53,7 +41,9 @@ ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
 				<input type="password" id="password" class="span4" name="password" placeholder="Hasło">
 				<button type="submit" name="submit" class="btn btn-info btn-block">Zaloguj</button>
 			<!-- Zamykamu formularz. -->
-			<?php echo form_close(); ?>
+			<?php echo form_close(); ?></div>
+	
+		
 			
 			
 

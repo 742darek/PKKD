@@ -16,28 +16,23 @@
 </div>
 
 <div id="extras">
-<h3>&nbsp;<br />
-  Adres:</h3>
-<p>Olsztyn
-ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
-
-
+<?php $this->load->view('pizzeria/extras'); ?>
 
 
 </div>
 
 <div id="content">
-&nbsp;     <center><h2>Panel admina  </h2></center>
+&nbsp;     <h2>Panel admina  </h2>
 
 
 
 
 
-<p>&nbsp;</p>
 
 
 
 
+&nbsp;
 	
 		
 <?php $this->load->helper('form'); ?>
@@ -51,21 +46,17 @@ ul. Jana Pawła II Hala Główna 3/4 tel.798666999</p>
            </li>
 
            <li>
-                <label for="qty">Podaj ilość</label><br>
+                <label for="qty">Podaj ilość składników w magazynie</label><br>
                 <input type="text" name="qty" value="<?php echo set_value('qty'); ?>" />
                 <?php echo form_error('qty'); ?>
             </li>
            <li>
-                <label for="price">Podaj cenę</label><br>
+                <label for="price">Podaj cenę za szt.</label><br>
                 <input type="price" name="price" value="<?php echo set_value('price'); ?>" />
                 <?php echo form_error('price'); ?>
             </li>
             
-            <li>
-                <label for="status">Podaj status</label><br>
-                  <input type="text" name="status" value="<?php echo set_value('status'); ?>" />
-                <?php echo form_error('status'); ?>
-            </li>
+            
         <ul>
             <h3 class="submit">
                 <input type="submit" value="Dodaj" />

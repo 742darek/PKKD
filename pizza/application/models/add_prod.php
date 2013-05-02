@@ -11,10 +11,10 @@ function __construct()
 
 
 
-    public function dodaj($description, $qty, $price, $status)
+    public function dodaj($description, $qty, $price)
     {
-        $query_str = "INSERT INTO products (description, qty, price, status) VALUES (?, ?, ?, ?)";
-		$this->db->query($query_str, array($description, $qty, $price, $status));
+        $query_str = "INSERT INTO products (description, qty, price) VALUES (?, ?, ?)";
+		$this->db->query($query_str, array($description, $qty, $price));
     }
 }
  

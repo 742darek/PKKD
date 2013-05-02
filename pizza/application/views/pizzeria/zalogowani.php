@@ -9,9 +9,7 @@
 
 
 
-<script type="text/javascript" src="<?PHP echo base_url(); ?>application/galeria/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="<?PHP echo base_url(); ?>application/galeria/js/lightbox.js"></script>
-<link rel="stylesheet" href="<?PHP echo base_url(); ?>application/galeria/css/lightbox.css" type="text/css" media="screen" />
+
 
 
 
@@ -24,41 +22,21 @@
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
 
+
 </ul>
 </div>
 
 <div id="extras">
+
 <?php $this->load->view('pizzeria/extras'); ?>
+
 </div>
 
 <div id="content">
+&nbsp;<h2>Jesteś już zalogowany ! </h2>
 
 
-
-
-<div class="section" id="example">
-
-<h3>Image set</h3>
-
-<div class="imageRow">
-  	<div class="set">
-  	  <div class="single first"> 
-<?PHP echo $galeria; ?>
-
-
-
-
-
-
-
-
-  	</div>
-  </div>
-
-</div>  	
-
-</div>  	
-
+<p>Nie musisz logować się ponownie</p>
 
 
 
@@ -67,6 +45,10 @@
 
 
 <p>&nbsp;</p>
+
+
+
+
 
 		
 		
