@@ -1,5 +1,5 @@
 <div id="footer">
-<p>Copyright &copy; <?php 
+<p>&copy; <?php 
 
 $rok="2013";
 $rokb=date("Y");
@@ -15,14 +15,10 @@ else {
 
 	echo "$rok";
 }
-?>&nbsp;(PKKD)</p>
-
-
-
-
-
+?>&nbsp;PKKD. Wszelkie prawa zastrzeżone.</p>
 
 </div>
 </div>
+
 </body>
 </html>

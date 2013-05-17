@@ -15,7 +15,7 @@ function __construct()
   $data = array(
     // 'item_id'      => $item_id,
     // 'purchase_id'  => $purchase_id,
-    // 'download_at'  => time(),
+    'download_at'  => time(),
     'ip_address'   => '321321321',
     'user_agent'   => 'dupa'
   );

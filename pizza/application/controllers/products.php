@@ -5,44 +5,39 @@ class products extends CI_Controller{
         function __construct(){
                                                         parent::__construct();
                                                         $this->load->model('product_model');
-                                                        $this->load->library('session');
-                                                        if ( ! $this->session->userdata('user_id'))
-            {
-                // Wyświetlamy stonę błędu, ale równie dobrze możemy zwrócic inny komunikat,
-                // np. taki, który informuje o konieczności zalogowania do aplikacji lub 
-                // przekierować użytkownika do strony logowania.
-                show_404();
-                
-            }
+                                                        
 
         }
 
         function index(){
+
                         $data['products'] = $this->product_model->get_products();
                         $this->load->view('pizzeria/header');
                         $this->load->view('pizzeria/cart',$data);
                         $this->load->view('pizzeria/footer');
         }
         function addToCart(){
+              
+               $this->load->library('session');
+             if ( ! $this->session->userdata('user_id'))
+            {
+                show_404(); 
+            }
+           
+
                         $data = array(
                'id'      => $this->input->post('id'),
-               'qty'     => $this->input->post('qty'),
-               'price'   => $this->input->post('price'),
                'name'    => $this->input->post('description'),
-               'imie'    => $this->input->post('imie'),
-               'adres'   => $this->input->post('adres')
+               'qty'     => $this->input->post('qty'),
+               'price'   => $this->input->post('price')
+             
             );
+
+                    
                         $this->cart->insert($data);
-                        // redirect(base_url().'index.php/shopping-cart-view');
                         redirect('products');
         }
        
-
-        // function shoppingCartView(){
-        //                 $data['products'] = $this->cart->contents();
-        //                  // $this->load->view('shopping_cart_view',$data);
-        //                 // $this->load->view('products_view',$data);
-        // }
        
         function saveCartProducts(){
                         $ids = Array();

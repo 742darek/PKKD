@@ -1,23 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3c.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3c.org/1999/xhtml" xml:lang="pl" lang="pl">
-<head>
-
-<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-
-<link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
-
-
-
-
-
-
-
-
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
-<li><a href="<?php echo site_url('pizza/index');?>">Strona Główna</a></li>
 
 <?php $this->load->view('pizzeria/leftmenu'); ?>
 
@@ -43,41 +26,53 @@
                 <th>Nazwa</th>
                 <th>Cena</th>
                 <th>Ilość</th>
+                <th>Edycja</th>
+                    <th>Usuwanie</th>
+               
+                
                 </tr>
-                     <?php foreach($get as $gets){ ?>
+                     <?php foreach($id as $ids){ ?>
                    
-                        <tr>
+                       <tr>
                         <td>
-                        <?php echo $gets['id'] ?>
-                        <input type = "hidden" name = "id" value = "<?php echo $gets['id'] ?>"/>
+                        <?php echo $ids['id'] ?>
+                        <input type = "hidden" name = "id" value = "<?php echo $ids['id'] ?>"/>
                         </td>
                         <td>
-                        <?php echo $gets['description'] ?>
-                        <input type = "hidden" name = "description" value = "<?php echo $gets['description'] ?>"/>
+                        <?php echo $ids['description'] ?>
+                        <input type = "hidden" name = "description" value = "<?php echo $ids['description'] ?>"/>
                         </td>
                         <td>
-                        <?php echo $gets['price'] ?>
-                        <input type = "hidden" name = "price" value = "<?php echo $gets['price'] ?>"/>zł
+                        <?php echo $ids['price'] ?>
+                        <input type = "hidden" name = "price" value = "<?php echo $ids['price'] ?>"/>zł
                         </td>
                         
                          <td>
-                        <?php echo $gets['qty'] ?>
-                        <input type = "hidden" name = "qty" value = "<?php echo $gets['qty'] ?>"/>
+                        <?php echo $ids['qty'] ?>
+                        <input type = "hidden" name = "qty" value = "<?php echo $ids['qty'] ?>"/>
                         </td>
+                        
+                               
 
-                        
-                      
-                       
-                        
-                         
-                       
-                        </tr>
-                             
-                        
+                            <td><a href="<?php echo site_url('get/edit/'.$ids['id']) ?>" class="button">Edytuj</a></td>  
+                           <td><a href="<?php echo site_url('get/delete/'.$ids['id']) ?>" class="button">Usuń</a>   </td>  
+
+                            
 
 
-         <?php } ?>
-        </table>
+                          
+
+
+                            
+</tr>
+
+
+                     
+                        
+                                        
+   <?php } ?>  
+ 
+ </table>
 
 
 

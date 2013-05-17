@@ -33,8 +33,7 @@ class Rejestracja extends CI_Controller {
 	  if(!$this->form_validation->run())
         {	
 			
-    //    $this->load->view('rej_form');
-		//$this->load->view('pizzeria/user_login');
+    $msg="Zostałeś zarejestrowany!";
         }
         else
         {	
@@ -47,6 +46,8 @@ class Rejestracja extends CI_Controller {
             $result = $this->Rej->dodaj($username,$email,$password,$adres);
 
             if($result){
+                                     
+
                                         $msg="Zostałeś zarejestrowany!";
                                         // $this->cart->destroy();
                                         }

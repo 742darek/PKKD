@@ -13,13 +13,13 @@ background: #000000;
 color: #ffffff;
 border:  none;
 margin: 0 auto;
-width:790px;
+width: 790px;
 }
 
 
 
 #header {
-margin: 0 auto;
+margin: 30px auto;
 height: 80px;
 width: 790px;
 background-color: #000000;
@@ -43,8 +43,8 @@ background-color: #000000;
 
 #header p{
 
-font-weight: bold;
-padding-top: 10px;
+ font-weight: bold;
+ padding-top: 10px;
  margin-top: 0px;
  margin-right: 0;
  margin-left: 20px;
@@ -52,13 +52,6 @@ padding-top: 10px;
  }
 
 
-
-
-/*#header h2 {
-width: 700px;
-margin: 0px 0px 0px 15px;
-float: left;
-}*/
 
 #header h3 {
   float: left;
@@ -72,7 +65,7 @@ float: left;
 clear: left;
 float: left;
 width: 150px;
-margin: 0 0 10px 0;
+margin: 0 auto;
 padding: 10px ;
 font-size: 0.9em;
 }
@@ -80,7 +73,6 @@ font-size: 0.9em;
 #avmenu ul {	
 list-style: none;
 width: 150px;
-margin: 0 0 20px 0;
 padding: 0;
 font-size: 1.1em;
 
@@ -110,6 +102,45 @@ color: #fffff1;
 border-left: 10px #47381e solid;
 
 }
+
+
+
+.button{
+  font-size:11px;
+  font-family:Georgia;
+  font-weight:normal;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  border:1px solid #84bbf3;
+  padding:1px 1px;
+  text-decoration:none;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #79bbff), color-stop(100%, #378de5) );
+  background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+  background:-ms-linear-gradient( top, #79bbff 5%, #378de5 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+  background-color:#79bbff;
+  color:#ffffff;
+  display:inline-block;
+  text-shadow:1px 1px 0px #528ecc;
+  -webkit-box-shadow:inset 1px 1px 0px 0px #bbdaf7;
+  -moz-box-shadow:inset 1px 1px 0px 0px #bbdaf7;
+  box-shadow:inset 1px 1px 0px 0px #bbdaf7;
+}.button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #378de5), color-stop(100%, #79bbff) );
+  background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+  background:-ms-linear-gradient( top, #378de5 5%, #79bbff 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+  color:#ffffff;
+  background-color:#84bbf3;
+  text-decoration: none;
+}.button:active {
+  position:relative;
+  top:1px;
+}
+
+
+
 
 
 #panel ul{
@@ -192,23 +223,15 @@ font-size: 1.5em;
 margin: 0 0 0.5em 0;
 }
 
-#content img {
-padding: 0px;
-display:inline;
-}
 
-/*#content table{
-  margin-top: 30px;
-  margin-left: 140px;
-}
-*/
 
-.table{
+.table td,th,tr{
 
   margin-left: -140px;
+  text-align: center;
+  padding: 5px;
+
 }
-
-
 
 .produkty{
 
@@ -216,22 +239,31 @@ margin: 0em 170px 20px 180px;
 padding: 0 10px 0 0px;
 }
 
-/*#content legend{
-  margin-top: 100px;
-  margin-left: 30px;
-}
-
-#content input{
-  margin-left: 30px;
-}*/
 
 
 .logowanie{
  margin-top: 60px;
+
+}
+
+.logowanie input{
+
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
 }
 
 
-#rejestracja ul li{
+#rejestracja ul{
 list-style: none;
 }
 
@@ -268,19 +300,10 @@ text-align: center;
 color: #000000;
 font-size: 0.9em;
 height: 190px;
-/*border-bottom: 40px solid #e44d26;*/
+
 
 background: #211d1e url(images/pom_bas.jpg) no-repeat ;
 }
-
-/*#footer a {
-color: #808080;
-text-decoration: none;
-}
-
-#footer a:hover {
-text-decoration: underline;
-}*/
 
 #footer p{
   padding-top: 15px;
@@ -301,7 +324,7 @@ list-style: none;
 
 }
 
-
+/*
 .left {
 margin: 0px 7px 0px 5px;
 float: left;
@@ -318,7 +341,7 @@ text-align: right;
 
 .center {
 text-align: center;
-}
+}*/
 
 .small {
 font-size: 0.8em;
@@ -334,6 +357,7 @@ display: none;
 
 .section {
   padding: 40px 0;
+  float: left;
 }
 /* line 314, ../sass/screen.sass */
 .section:first-child {
@@ -444,4 +468,15 @@ display: none;
   -ms-border-bottom-left-radius: 4px;
   -o-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+.htimeauth
+{
+display:block;
+margin: 0;
+padding: 0;
+text-align:left;
+font-size: 10px;
+color: #666;
+background-color: inherit;
 }

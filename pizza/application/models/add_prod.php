@@ -16,7 +16,9 @@ function __construct()
         $query_str = "INSERT INTO products (description, qty, price) VALUES (?, ?, ?)";
 		$this->db->query($query_str, array($description, $qty, $price));
     }
+
+
+
 }
- 
 /* End of file user_model.php */
 /* Location: ./application/models/user_model.php */

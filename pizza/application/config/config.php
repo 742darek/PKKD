@@ -14,7 +14,9 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/pizza';
+$config['base_url']	= 'http://localhost/pizza/';
+
+
 
 
 /*
@@ -27,7 +29,7 @@ $config['base_url']	= 'http://localhost/pizza';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

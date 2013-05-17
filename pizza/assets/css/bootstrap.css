@@ -982,6 +982,7 @@ input[type="time"],
 input[type="week"],
 input[type="number"],
 input[type="email"],
+input[type="adres"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
@@ -990,7 +991,7 @@ input[type="color"],
   display: inline-block;
   height: 20px;
   padding: 4px 6px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 20px;
   color: #555555;
