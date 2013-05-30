@@ -20,9 +20,8 @@
 
 <ul>
 
-<li><a href="<?php echo site_url('dodawanie');?>">Dodaj produkty</a></li>
-<li><a href="<?php echo site_url('get');?>">Produkty</a></li>
-<li><a href="<?php echo site_url('orders');?>">Zamówienia</a></li>
+<li><a href="<?php echo site_url('get/ready');?>">Gotowe pizze</a></li>
+<li><a href="<?php echo site_url('get/ready_ingr');?>">Składniki</a></li>
 
 </ul>
 

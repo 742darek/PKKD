@@ -25,12 +25,10 @@
                 <th>Nazwa</th>
                 <th>Cena</th>
                 <th>Ilość</th>
-                
                 <th>Razem</th>
                 <th>Nick</th>
                 <th>Adres</th>
-                
-                
+                <th>Czas zamówienia</th>
                 </tr>
                      <?php foreach($orders as $order){ ?>
                     
@@ -47,9 +45,6 @@
                         <?php echo $order['description'] ?>
                         <input type = "hidden" name = "description" value = "<?php echo $order['description'] ?>"/>
                         </td>
-                        
-
-                       
                         <td>
                         <?php echo $order['price'] ?>
                         <input type = "hidden" name = "price" value = "<?php echo $order['price'] ?>"/>zł
@@ -68,12 +63,10 @@
                         <?php echo $order['adres'] ?>
                         <input type = "hidden" name = "adres" value = "<?php echo $order['adres'] ?>"/>
                         </td>
-                        
-                        
-
-                         
-                        
-                           
+                        <td>
+                        <?php echo $order['time'] ?>
+                        <input type = "hidden" name = "time" value = "<?php echo $order['time'] ?>"/>
+                        </td>    
                         </tr>
 
          <?php } ?>

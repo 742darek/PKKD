@@ -11,11 +11,20 @@ function __construct()
 
 
 
-    public function dodaj($description, $qty, $price)
+    public function dodaj($description, $opis, $qty, $price)
     {
-        $query_str = "INSERT INTO products (description, qty, price) VALUES (?, ?, ?)";
-		$this->db->query($query_str, array($description, $qty, $price));
+        $query_str = "INSERT INTO products (description, opis, qty, price) VALUES (?, ?, ?, ?)";
+		$this->db->query($query_str, array($description, $opis, $qty, $price));
     }
+
+
+
+     public function dodaj_ingr($name, $wielkosc, $qty, $price)
+    {
+        $query_str = "INSERT INTO ingredients (name, wielkosc, qty, price) VALUES (?, ?, ?, ?)";
+		$this->db->query($query_str, array($name, $wielkosc, $qty, $price));
+    }
+
 
 
 

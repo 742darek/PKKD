@@ -1,15 +1,15 @@
 <?php
-class product_model extends CI_Model{
+class ingredients_model extends CI_Model{
     
       private $table;
     
       function __construct(){
                   parent::__construct();
-                  $this->table='products';
+                  $this->table='ingredients';
       }  
           function get_products(){
                                     // $this->db->select('option_value');   
-                                    $result= $this->db->get('products');  
+                                    $result= $this->db->get('ingredients');  
 
 
                                       return $result->result_array();
@@ -19,7 +19,7 @@ class product_model extends CI_Model{
 
 
           
-          function save_cart_products($ids,$descriptions,$prices,$qtys,$imies,$adress){
+          function save_cart_products($ids,$names,$wielkoscs,$prices,$qtys,$imies,$adress){
                                         $this->db->trans_begin();
                                         $ndx=0;
                                         foreach($ids as $id){
@@ -28,7 +28,8 @@ class product_model extends CI_Model{
                                                         $now = date("Y-m-d H:i:s");
 
                                                         $data = array('product_id' => $id,
-                                                        'description' => $descriptions[$ndx],
+                                                        'name' => $names[$ndx],
+                                                        'wielkosc' => $wielkoscs[$ndx],
                                                         'price' =>$prices[$ndx],
                                                         'qty_ordered' =>$qtys[$ndx],
                                                         'imie' =>$imies[$ndx],

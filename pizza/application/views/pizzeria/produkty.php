@@ -27,7 +27,7 @@
                 <th>Cena</th>
                 <th>Ilość</th>
                 <th>Edycja</th>
-                    <th>Usuwanie</th>
+                <th>Usuwanie</th>
                
                 
                 </tr>

@@ -50,17 +50,17 @@
                 <?php echo form_error('adres'); ?>
             </li>
         <ul>
-            <h3 class="submit">
-                
-                <button type="submit" name="submit" class="button">Rejestracja</button>
-                
-            </h3>
+         
         
   
 <?php echo form_close(); ?>
 
 
-		
+		 <h3 class="submit">
+                
+                <button type="submit" name="submit" class="button">Rejestracja</button>
+                
+            </h3>
 		
 
 </div>

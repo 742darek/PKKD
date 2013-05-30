@@ -49,10 +49,9 @@
                
                 <th>ID</th>
                 <th>Nazwa</th>
-                <th>Składniki</th>
+                <th>Wielkosc</th>
                 <th>Cena</th>
                 <th>Ilość</th>
-                <!-- <th>Opcje wyboru</th> -->
                 <th>Akcja</th>
                
                
@@ -64,12 +63,12 @@
                         <input type = "hidden" name = "id" value = "<?php echo $product['id'] ?>"/>
                         </td>
                         <td>
-                        <?php echo $product['description'] ?>
-                        <input type = "hidden" name = "description" value = "<?php echo $product['description'] ?>"/>
+                        <?php echo $product['name'] ?>
+                        <input type = "hidden" name = "name" value = "<?php echo $product['name'] ?>"/>
                         </td>
                         <td>
-                        <?php echo $product['opis'] ?>
-                        <input type = "hidden" name = "opis" value = "<?php echo $product['opis'] ?>"/>
+                        <?php echo $product['wielkosc'] ?>
+                        <input type = "hidden" name = "wielkosc" value = "<?php echo $product['wielkosc'] ?>"/>
                         </td>
                         <td>
                         <?php echo $product['price'] ?>

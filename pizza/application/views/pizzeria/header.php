@@ -9,6 +9,14 @@
 
 <title>Pizzeria</title>
 
+
+<script src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-1.7.2.min.js"></script>
+<script src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery.smooth-scroll.min.js"></script>
+<script src="<?PHP echo base_url(); ?>application/views/pizzeria/js/lightbox.js"></script>
+
+
+
 <script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/js/jquery-1.3.1.min.js"></script>
 <script type="text/javascript">
 
@@ -66,7 +74,7 @@ function gallery() {
   $('#gallery .caption').animate({opacity: 0.0}, { queue:false, duration:0 }).animate({height: '1px'}, { queue:true, duration:300 });  
   
   //Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
-  $('#gallery .caption').animate({opacity: 0.7},100 ).animate({height: '50px'},500 );
+  $('#gallery .caption').animate({opacity: 0.7},100 ).animate({height: '70px'},500 );
   
   //Display the content
   $('#gallery .content').html(caption);
@@ -87,7 +95,8 @@ body{
 
 #gallery {
   position:relative;
-  height:300px
+  height:300px;
+
 }
   #gallery a {
     float:left;
@@ -95,25 +104,31 @@ body{
   }
   
   #gallery a img {
-    border:none;
+     border:hidden 5px #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
   }
   
   #gallery a.show {
-    z-index:500
+    z-index:500;
+
   }
 
   #gallery .caption {
     z-index:600; 
     background-color:#000; 
     color:#ffffff; 
-    height:50px; 
+    height:70px; 
     width:100%; 
     position:absolute;
     bottom:0px;
+
+
   }
 
   #gallery .caption .content {
-    margin:5px
+    margin:5px;
   }
   
   #gallery .caption .content h3 {
@@ -186,6 +201,9 @@ body{
     <a href="#">
     <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza4.jpg" alt="Grass Blades" width="790" height="300" title="" alt="" rel="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quis!"/>
   </a>
+
+  
+  
   
   
 

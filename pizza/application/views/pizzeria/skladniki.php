@@ -11,24 +11,22 @@
 
 <div id="content">
 
-
-        
-        <ul>
+<ul>
             <ul>
 
    
-            <?php echo form_open('get/edit/'.$id); ?>
+            <?php echo form_open('get/edit_ingr/'.$id); ?>
            <li>
-                <label for="description">Podaj nazwę</label><br>
-                <input type="text" name="description" value="<?php echo set_value('description',$description); ?>" />
-                <?php echo form_error('description'); ?>
+                <label for="name">Podaj nazwę</label><br>
+                <input type="text" name="name" value="<?php echo set_value('name',$name); ?>" />
+                <?php echo form_error('name'); ?>
            </li>
 
 
             <li>
-                <label for="opis">Podaj opis</label><br>
-                <input type="text" name="opis" value="<?php echo set_value('opis',$opis); ?>" />
-                <?php echo form_error('opis'); ?>
+                <label for="wielkosc">Podaj opis</label><br>
+                <input type="text" name="wielkosc" value="<?php echo set_value('wielkosc',$wielkosc); ?>" />
+                <?php echo form_error('wielkosc'); ?>
            </li>
 
            <li>
@@ -49,12 +47,14 @@
     </ul>
 <?php echo form_close(); ?>
 
-
-	
+</div>
+    
+        
      
-                        
-                        
-                          
-                        
+        
+
+
+			
+
 
 </div>

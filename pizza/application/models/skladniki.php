@@ -1,22 +1,29 @@
 <?php
-class Produkty extends CI_Model{
+class Skladniki extends CI_Model{
     
       private $table;
     
       function __construct(){
                   parent::__construct();
-                  $this->table='products';
-      }  
-          function get_products(){
+                  $this->table='ingredients';
+
+              }
+                 
+          function get_ingr(){
                                         $result = $this->db->get($this->table);
                                         return $result->result_array();
           }
 
 
+
+
+
+
+
     public function usun($id)
     {
        $this->db->where('id', $id);
-       $this->db->delete('products'); 
+       $this->db->delete('ingredients'); 
        
     }
 

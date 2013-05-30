@@ -5,6 +5,7 @@ class products extends CI_Controller{
         function __construct(){
                                                         parent::__construct();
                                                         $this->load->model('product_model');
+                                                        $this->load->model('ingredients_model');
                                                         
 
         }
@@ -16,6 +17,27 @@ class products extends CI_Controller{
                         $this->load->view('pizzeria/cart',$data);
                         $this->load->view('pizzeria/footer');
         }
+
+
+
+        function ingredients(){
+
+                        $data['products'] = $this->ingredients_model->get_products();
+                        $this->load->view('pizzeria/header');
+                        $this->load->view('pizzeria/cart2',$data);
+                        $this->load->view('pizzeria/footer');
+        }
+
+
+
+        function menu(){
+
+                        
+                        $this->load->view('pizzeria/header');
+                        $this->load->view('pizzeria/menu');
+                        $this->load->view('pizzeria/footer');
+        }
+
         function addToCart(){
               
                $this->load->library('session');
