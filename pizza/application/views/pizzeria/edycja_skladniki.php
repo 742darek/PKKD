@@ -16,7 +16,7 @@
 </div>
 
 <div id="content">
- &nbsp;<h2>Produkty</h2>
+ &nbsp;<h2>Edytuj składniki</h2>
 
 
         <table border = "1">

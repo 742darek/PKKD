@@ -15,7 +15,10 @@
 
 <div id="content">
 
+&nbsp;<h2>Galeria zdjęć</h2>
 
+
+<p>W dziale tym znajdują się zdjęcia naszej restauracji oraz naszych specjałów!</p>
 
 
 <div class="imageRow">

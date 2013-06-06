@@ -11,6 +11,8 @@
 
 <div id="content">
 
+    &nbsp;<h2>Dodaj pizzę!</h2>
+
 <div class="dodawanie">
     
 

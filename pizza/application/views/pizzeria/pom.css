@@ -1,0 +1,436 @@
+/* Nature - an open source xhtml/css website layout by Studio-plume.org kty 
+(Jan 04, 2007)
+ */
+
+body {
+margin: 0 auto;
+padding: 0;
+font: 76% Verdana,Tahoma,Arial,sans-serif;
+background: #211d1e url(images/body_deg.gif) repeat-x
+}
+
+
+#wrap {
+background: #000000;
+color: #ffffff;
+border:  none;
+margin: 0 auto;
+width: 790px;
+}
+
+
+
+#header {
+margin: 30px auto;
+height: 80px;
+width: 790px;
+background-color: #000000;
+
+}
+
+
+#header ul{
+
+  list-style: none;
+}
+
+
+#header li a{
+  text-decoration: none;
+  color: white;
+  margin-left: 650px;
+  margin-top: 30px;
+}
+
+
+#header p{
+
+ font-weight: bold;
+ padding-top: 10px;
+ margin-top: 0px;
+ margin-right: 0;
+ margin-left: 20px;
+ margin-bottom: 0;
+ }
+
+
+
+#header h3 {
+  float: left;
+  margin-left: 20px;
+}
+
+
+
+
+#avmenu {
+clear: left;
+float: left;
+width: 150px;
+margin-top: -25px;
+padding: 10px ;
+font-size: 0.9em;
+}
+
+#avmenu ul {	
+list-style: none;
+width: 150px;
+padding: 0;
+font-size: 1.1em;
+}	
+
+#avmenu li {
+margin-bottom: 4px;
+}
+
+#avmenu li a {
+font-weight: bold;
+height: 20px;
+text-decoration: none;
+color: #fffff1;
+display: block;
+padding: 6px 0 0 10px;
+background: #67522c;
+border-left: 1px #846837 solid;
+border-radius: 4px;
+  
+}
+
+	
+#avmenu li a:hover {
+background: #67522c;
+color: #fffff1;
+border-left: 10px #47381e solid;
+
+}
+
+
+
+.button{
+  font-size:20px;
+  font-family:Georgia;
+  font-weight:normal;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  border:1px solid #84bbf3;
+  padding:1px 1px;
+  text-decoration:none;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #79bbff), color-stop(100%, #378de5) );
+  background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+  background:-ms-linear-gradient( top, #79bbff 5%, #378de5 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+  background-color:#79bbff;
+  color:#ffffff;
+  display:inline-block;
+  text-shadow:1px 1px 0px #528ecc;
+  -webkit-box-shadow:inset 1px 1px 0px 0px #bbdaf7;
+  -moz-box-shadow:inset 1px 1px 0px 0px #bbdaf7;
+  box-shadow:inset 1px 1px 0px 0px #bbdaf7;
+}.button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #378de5), color-stop(100%, #79bbff) );
+  background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+  background:-ms-linear-gradient( top, #378de5 5%, #79bbff 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+  color:#ffffff;
+  background-color:#84bbf3;
+  text-decoration: none;
+}.button:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+
+.panel ul{
+  
+list-style: none;
+
+}
+
+.panel li{
+
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+
+.panel li a{
+
+
+height: 20px;
+
+text-decoration: none;
+color: #fffff1;
+display: block;
+padding: 6px 0 0 0px;
+background: #67522c;
+border-left: 5px #846837 solid;
+border-radius: 4px;
+}
+
+
+
+
+#extras {
+float: right;
+width: 120px;
+height: 130px;
+margin: 10px 10px 10px 0;
+padding-top: 10px;
+padding-left: 20px;
+font-size: 0.9em;
+line-height: 1.5em;
+background-color: gray;
+border-radius: 20px 20px 20px 20px;
+}
+
+
+#extras p {
+margin: 0 0 1.5em 0;
+color: white;
+text-shadow: 3px 3px 5px black;
+
+}
+
+
+#extras a{
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+
+
+#extras a:hover{
+text-decoration: none;
+color: white;
+}
+
+
+#content {
+margin: -2em 170px 20px 180px;
+padding: 0 10px 0 0px;
+line-height: 1.6em;
+text-align: left;
+}
+
+
+#content {
+  
+list-style: none;
+
+}
+
+#content li a{
+
+
+height: 20px;
+text-decoration: none;
+color: #fffff1;
+display: block;
+padding: 6px 0 0 0px;
+background: #67522c;
+border-left: 5px #846837 solid;
+border-radius: 4px;
+}
+
+
+#content h2 {
+font-size: 1.5em;
+margin: 0 0 0.5em 0;
+}
+
+
+
+.galeria{
+  margin-left: 10px;
+  float: left;
+}
+
+
+.galeria a{
+
+  float: left;
+  padding-left: 1px;
+
+}
+
+
+
+.table td,th,tr{
+
+  margin-left: -140px;
+  text-align: center;
+  padding: 5px;
+
+}
+
+.produkty{
+
+margin: 0em 170px 20px 180px;
+padding: 0 10px 0 0px;
+}
+
+
+
+.logowanie{
+ margin-top: 60px;
+
+}
+
+.logowanie input{
+
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+
+#rejestracja{
+  
+  margin-left: 70px;
+}
+
+
+#rejestracja ul{
+
+  list-style: none;
+}
+
+
+
+
+#footer {
+clear: both;
+margin: 0 auto;
+padding: 0px 0em 0px 0em;
+width: 790px;
+height: 40px;
+text-align: center;
+color: #000000;
+font-size: 0.9em;
+height: 190px;
+background: #211d1e url(images/pom_bas.jpg) no-repeat ;
+}
+
+#footer p{
+  padding-top: 15px;
+}
+
+
+
+.dodawanie{
+
+margin-left:100px;
+
+}
+
+
+.dodawanie ul{
+list-style: none;
+}
+
+
+
+.small {
+font-size: 0.8em;
+}
+
+.bold {
+font-weight: bold;
+}
+
+.hide {
+display: none;
+}
+
+.section {
+  padding: 40px 0;
+  float: left;
+}
+
+.section:first-child {
+  border-top: none;
+}
+
+
+.htimeauth
+{
+display:block;
+margin: 0;
+padding: 0;
+text-align:left;
+font-size: 10px;
+color: #666;
+background-color: inherit;
+}
+
+
+
+.imageRow {
+  *zoom: 1;
+  margin: 20px 0;
+}
+
+.imageRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.imageRow .single {
+  float: left;
+}
+.imageRow .single a {
+  float: left;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px;
+  line-height: 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.imageRow .single a img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.imageRow .single a:hover {
+  background-color: #8ad459;
+}
+
+
+h3{
+
+  margin-left: 63px;
+}
