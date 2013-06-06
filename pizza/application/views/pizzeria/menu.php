@@ -15,6 +15,8 @@
 	<div class="panel">
 &nbsp; <h2>Menu</h2>
 
+ <p>Minimalne zamówienie internetowe wynosi 10,00 zł. Przy zamówieniu powyżej 40,00 zł dostawa gratis.
+Wszelkie uwagi dotyczące jakości naszych usług prosimy kierować pod numer 798-666-999</p>
 
 
 

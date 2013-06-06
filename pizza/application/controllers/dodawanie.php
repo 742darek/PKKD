@@ -60,7 +60,6 @@ class Dodawanie extends CI_Controller {
         $this->load->library('form_validation');
         $this->form_validation->set_error_delimiters('<span class="error">', '</span>');
 		$this->form_validation->set_rules('name', 'name','required');
-		$this->form_validation->set_rules('wielkosc', 'wielkosc','required');
 		$this->form_validation->set_rules('qty','lang:qty','required|numeric');
 		$this->form_validation->set_rules('price','lang:price','required|numeric|greater_than[0.99]');
 		$this->load->view('pizzeria/header');
@@ -76,11 +75,10 @@ class Dodawanie extends CI_Controller {
 			
 			
 			$name = $this->input->post('name');
-			$wielkosc = $this->input->post('wielkosc');
 			$qty = $this->input->post('qty');
 			$price = $this->input->post('price');
 			
-            $this->Add_prod->dodaj_ingr($name, $wielkosc, $qty, $price);
+            $this->Add_prod->dodaj_ingr($name, $qty, $price);
         }
 
     }

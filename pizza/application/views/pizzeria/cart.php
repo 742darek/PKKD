@@ -41,6 +41,10 @@
 
  <div id="content"><h2><center><p>Produkty</p></center></h2>
 
+
+
+
+   
 <div id="cart">
 
    

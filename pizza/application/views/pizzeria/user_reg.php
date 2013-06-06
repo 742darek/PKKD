@@ -20,13 +20,10 @@
 
 
 <p>&nbsp;</p>
-
-
-
-<?php $this->load->helper('form'); ?>
+<div id="rejestracja"><?php $this->load->helper('form'); ?>
 <?php echo form_open('rejestracja'); ?>
     
-        
+        <ul>
 
             <li>
                 <label for="username">Podaj nazwę użytkownika</label><br>
@@ -49,11 +46,15 @@
                 <input type="adres" name="adres" />
                 <?php echo form_error('adres'); ?>
             </li>
-        <ul>
+
+        </ul>
+        
          
         
   
 <?php echo form_close(); ?>
+
+
 
 
 		 <h3 class="submit">
@@ -61,6 +62,8 @@
                 <button type="submit" name="submit" class="button">Rejestracja</button>
                 
             </h3>
+
+            </div>
 		
 
 </div>

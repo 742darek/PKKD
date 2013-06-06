@@ -17,7 +17,9 @@ public function __construct()
 				// Wyświetlamy stonę błędu, ale równie dobrze możemy zwrócic inny komunikat,
 				// np. taki, który informuje o konieczności zalogowania do aplikacji lub 
 				// przekierować użytkownika do strony logowania.
-				show_404();
+				 $this->load->view('pizzeria/header');
+ 				 $this->load->view('pizzeria/error');
+ 				 $this->load->view('pizzeria/footer');
 				
 			}
 
@@ -40,13 +42,19 @@ public function __construct()
  {
 	if ( $this->session->userdata('user_rights') == '0')
         {
-            show_404();
+ $this->load->view('pizzeria/header');
+ $this->load->view('pizzeria/error2');
+ $this->load->view('pizzeria/footer');
         }
 
- 
+elseif ($this->session->userdata('user_rights') == '1') {
+
  $this->load->view('pizzeria/header');
  $this->load->view('pizzeria/adm');
  $this->load->view('pizzeria/footer');
+
+ } 
+
  
  }
 

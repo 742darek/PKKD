@@ -1,5 +1,3 @@
-
-
 <div id="avmenu">
 <h2 class="hide">Menu:</h2>
 <ul>
@@ -63,7 +61,10 @@
       </a>
       </div>
 
-
+<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/lightbox.js"></script>
 
 <script>
   jQuery(document).ready(function($) {

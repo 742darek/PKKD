@@ -10,16 +10,14 @@ class ingredients_model extends CI_Model{
           function get_products(){
                                     // $this->db->select('option_value');   
                                     $result= $this->db->get('ingredients');  
-
-
-                                      return $result->result_array();
+                                    return $result->result_array();
           }
 
 
 
 
           
-          function save_cart_products($ids,$names,$wielkoscs,$prices,$qtys,$imies,$adress){
+          function save_cart_products($ids,$names,$prices,$qtys,$imies,$adress){
                                         $this->db->trans_begin();
                                         $ndx=0;
                                         foreach($ids as $id){
@@ -28,17 +26,18 @@ class ingredients_model extends CI_Model{
                                                         $now = date("Y-m-d H:i:s");
 
                                                         $data = array('product_id' => $id,
-                                                        'name' => $names[$ndx],
-                                                        'wielkosc' => $wielkoscs[$ndx],
+                                                        'description' => $names[$ndx],
                                                         'price' =>$prices[$ndx],
                                                         'qty_ordered' =>$qtys[$ndx],
                                                         'imie' =>$imies[$ndx],
-                                                        'adres' => $adress[$ndx],
-                                                        'time' => $now);
+                                                        'adres' =>$adress[$ndx],
+                                                        'time' =>$now
+                                                        
+                                                        );
                                                                                                           
                                                                                                          
                                                                                                          
-                                                        $this->db->insert("order_details",$data);
+                                                        $this->db->insert("order_ingredients",$data);
                                                        
                                                         //update product qty on the products table.
                                                         $this->db->where('id',$id);

@@ -24,7 +24,6 @@
                 <tr>
                 <th>ID</th>
                 <th>Nazwa</th>
-                <th>Wielkość</th>
                 <th>Cena</th>
                 <th>Ilość</th>
                 <th>Edycja</th>
@@ -44,10 +43,6 @@
                         <input type = "hidden" name = "name" value = "<?php echo $idse['name'] ?>"/>
                         </td>
                         <td>
-                        <?php echo $idse['wielkosc'] ?>
-                        <input type = "hidden" name = "wielkosc" value = "<?php echo $idse['wielkosc'] ?>"/>
-                        </td>
-                        <td>
                         <?php echo $idse['price'] ?>
                         <input type = "hidden" name = "price" value = "<?php echo $idse['price'] ?>"/>zł
                         </td>
@@ -60,7 +55,7 @@
                                
 
                            <td><a href="<?php echo site_url('get/edit_ingr/'.$idse['id']) ?>" class="button">Edytuj</a></td>  
-                           <td><a href="<?php echo site_url('get/delete/'.$idse['id']) ?>" class="button">Usuń</a></td>  
+                           <td><a href="<?php echo site_url('get/delete_ingr/'.$idse['id']) ?>" class="button">Usuń</a></td>  
 
                             
 

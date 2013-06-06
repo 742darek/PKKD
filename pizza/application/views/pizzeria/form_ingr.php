@@ -26,12 +26,6 @@
 
 
 
-             <li>
-                <label for="wielkosc">Podaj wielkość</label><br>
-                <input type="text" name="wielkosc" value="<?php echo set_value('wielkosc'); ?>" />
-                <?php echo form_error('wielkosc'); ?>
-           </li>
-
            <li>
                 <label for="qty">Podaj ilość (ile na stanie)</label><br>
                 <input type="text" name="qty" value="<?php echo set_value('qty'); ?>" />

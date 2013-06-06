@@ -23,12 +23,6 @@
            </li>
 
 
-            <li>
-                <label for="wielkosc">Podaj opis</label><br>
-                <input type="text" name="wielkosc" value="<?php echo set_value('wielkosc',$wielkosc); ?>" />
-                <?php echo form_error('wielkosc'); ?>
-           </li>
-
            <li>
                 <label for="qty">Podaj ilość składników w magazynie</label><br>
                 <input type="text" name="qty" value="<?php echo set_value('qty',$qty); ?>" />

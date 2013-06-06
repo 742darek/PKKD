@@ -49,7 +49,6 @@
                
                 <th>ID</th>
                 <th>Nazwa</th>
-                <th>Wielkosc</th>
                 <th>Cena</th>
                 <th>Ilość</th>
                 <th>Akcja</th>
@@ -66,10 +65,7 @@
                         <?php echo $product['name'] ?>
                         <input type = "hidden" name = "name" value = "<?php echo $product['name'] ?>"/>
                         </td>
-                        <td>
-                        <?php echo $product['wielkosc'] ?>
-                        <input type = "hidden" name = "wielkosc" value = "<?php echo $product['wielkosc'] ?>"/>
-                        </td>
+                       
                         <td>
                         <?php echo $product['price'] ?>
                         <input type = "hidden" name = "price" value = "<?php echo $product['price'] ?>"/>zł

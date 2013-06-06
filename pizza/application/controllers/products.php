@@ -90,7 +90,6 @@ class products extends CI_Controller{
                 $data = array(
                'id'      => $this->input->post('id'),
                'name'    => $this->input->post('name'),
-               'wielkosc'    => $this->input->post('wielkosc'),
                'qty'     => $this->input->post('qty'),
                'price'   => $this->input->post('price')
              
@@ -120,7 +119,7 @@ class products extends CI_Controller{
                        
                         if($result){
                                         $msg="Zamówienie zostało złożone!";
-                                         // $this->cart->destroy();
+                                        $this->cart->destroy();
                                         }
                         else{
                                         $msg="Save Failed..."; 
@@ -140,16 +139,17 @@ class products extends CI_Controller{
         function saveCartIngredients(){
                         $ids = Array();
                         $names = Array();
-                        $wielkoscs = Array();
                         $prices = Array();
                         $qtys = Array();
                         $ids = $this->input->post('id');
-                        $descriptions = $this->input->post('name');
+                        $names = $this->input->post('name');
                         $prices = $this->input->post('price');
                         $qtys = $this->input->post('qty');
                         $imies = $this->input->post('imie');
                         $adress = $this->input->post('adres');
-                        $result = $this->product_model->save_cart_products($ids,$names,$wielkoscs,$prices,$qtys,$imies,$adress);
+                 
+                     
+                        $result = $this->ingredients_model->save_cart_products($ids,$names,$prices,$qtys,$imies,$adress,$czas);
                        
                         if($result){
                                         $msg="Zamówienie zostało złożone!";

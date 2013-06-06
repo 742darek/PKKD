@@ -19,10 +19,10 @@ function __construct()
 
 
 
-     public function dodaj_ingr($name, $wielkosc, $qty, $price)
+     public function dodaj_ingr($name, $qty, $price)
     {
-        $query_str = "INSERT INTO ingredients (name, wielkosc, qty, price) VALUES (?, ?, ?, ?)";
-		$this->db->query($query_str, array($name, $wielkosc, $qty, $price));
+        $query_str = "INSERT INTO ingredients (name, qty, price) VALUES (?, ?, ?)";
+		$this->db->query($query_str, array($name, $qty, $price));
     }
 
 

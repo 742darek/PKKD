@@ -5,19 +5,18 @@
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
-<!-- <link rel="stylesheet" href="<?PHP echo base_url(); ?>application/views/pizzeria/screen.css" type="text/css" media="screen" /> -->
-<link rel="stylesheet" href="<?PHP echo base_url(); ?>application/views/pizzeria//lightbox.css" type="text/css" media="screen" />
+<!-- <link rel="stylesheet" href="<?PHP echo base_url(); ?>application/views/pizzeria/css/screen.css" type="text/css" media="screen" /> -->
+<link rel="stylesheet" href="<?PHP echo base_url(); ?>application/views/pizzeria/css/lightbox.css" type="text/css" media="screen" />
 
 <link rel="shortcut icon" href="<?PHP echo base_url(); ?>application/views/pizzeria/images/favicon.ico" />
 
 <title>Pizzeria</title>
 
 
-<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-ui-1.8.18.custom.min.js"></script>
-<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery.smooth-scroll.min.js"></script>
-<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/lightbox.js"></script>
-<link rel="stylesheet" href="<?PHP echo base_url(); ?>application/galeria/css/lightbox.css" type="text/css" media="screen" />
+
+
+
+
 
 
 
@@ -191,19 +190,19 @@ body{
 <div id="gallery">
 
   <a href="#" class="show">
-    <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza1.jpg" alt="Flowing Rock" width="790" height="300" title="" alt="" rel="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa."/>
+    <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza1.jpg" alt="Flowing Rock" width="790" height="300" title="" alt="" rel="Pizzeria PKKD - najlepsza pizza w mieście!"/>
   </a>
   
   <a href="#">
-    <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza2.jpg" alt="Grass Blades" width="790" height="300" title="" alt="" rel="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quis!"/>
+    <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza2.jpg" alt="Grass Blades" width="790" height="300" title="" alt="" rel="Pomieścimy do 40 osób, wynajmujemy lokal na spotkania okolicznościowe!"/>
   </a>
 
   <a href="#">
-    <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza3.jpg" alt="Grass Blades" width="790" height="300" title="" alt="" rel="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quis!"/>
+    <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza3.jpg" alt="Grass Blades" width="790" height="300" title="" alt="" rel="Ciągnący się, pyszny ser - za to cenią nas klienci.."/>
   </a>
 
     <a href="#">
-    <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza4.jpg" alt="Grass Blades" width="790" height="300" title="" alt="" rel="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quis!"/>
+    <img src="<?PHP echo base_url(); ?>application/views/pizzeria/slideshow/images/pizza4.jpg" alt="Grass Blades" width="790" height="300" title="" alt="" rel="Ciasto na średnim, chrupiącym cieście.."/>
   </a>
 
   

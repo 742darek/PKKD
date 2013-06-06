@@ -17,5 +17,15 @@ class Zamowienia extends CI_Model{
           }
 
 
+          function get_ingredients(){      
+
+                                        
+                                        $this->db->limit(10);
+                                        $this->db->order_by("id", "desc"); 
+                                        $result = $this->db->get('order_ingredients');
+                                        return $result->result_array();
+          }
+
+
 
       }
