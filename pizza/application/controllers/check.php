@@ -43,7 +43,7 @@ public function __construct()
 	if ( $this->session->userdata('user_rights') == '0')
         {
  $this->load->view('pizzeria/header');
- $this->load->view('pizzeria/error2');
+ $this->load->view('pizzeria/error');
  $this->load->view('pizzeria/footer');
         }
 
