@@ -56,7 +56,7 @@
                
                
                      <?php foreach($products as $product){ ?>
-                        <form method='post' action="<?php base_url()?>product-add-to-cart"> 
+                        <form method='post' action="<?php  echo base_url('products/addIngredientsToCart')?>"> 
                         <tr>
                         <td>
                         <?php echo $product['id'] ?>
@@ -77,10 +77,7 @@
                         <td>
                         <input type = "text" name ="qty" style ="background-color:#eee; width:30px;" value = "1"/>
                         </td> 
-                        
-                     <!--    <td><?php  echo form_dropdown('shirts', $product, 'large'); ?></td> -->
-                          
-                        
+                                  
                 
            
 
@@ -135,7 +132,7 @@
                         ?>
                         
                         <?php } ?>
-                        <form method='post' action="<?php echo base_url()?>index.php/save-shopping-cart">
+                        <form method='post' action="<?php echo base_url()?>index.php/save-ingredients-cart">
                         <table border = "1">
                         <tr>
                                      
@@ -185,7 +182,7 @@
     
                        
                         <td class="remove">
-                        <?php echo anchor('products/remove/'.$product['rowid'],'X'); ?>
+                        <?php echo anchor('products/removeing/'.$product['rowid'],'X'); ?>
                         </td>
                         </tr>
                         <?php endforeach; ?>

@@ -52,7 +52,6 @@
                 <th>Składniki</th>
                 <th>Cena</th>
                 <th>Ilość</th>
-                <!-- <th>Opcje wyboru</th> -->
                 <th>Akcja</th>
                
                
@@ -77,20 +76,11 @@
                         </td>
                         <td>
                         <input type = "text" name ="qty" style ="background-color:#eee; width:30px;" value = "1"/>
-                        </td> 
-                        
-                     <!--    <td><?php  echo form_dropdown('shirts', $product, 'large'); ?></td> -->
-                          
-                        
-                
-           
+                        </td>
 
-                        
 
-                     
 
-                        
-        
+
                         <td><input type = "submit" value ="Dodaj do koszyka" /></td> 
                         </tr>
                              

@@ -5,15 +5,19 @@
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="<?PHP echo base_url(); ?>application/views/pizzeria/pom.css" />
+<!-- <link rel="stylesheet" href="<?PHP echo base_url(); ?>application/views/pizzeria/screen.css" type="text/css" media="screen" /> -->
+<link rel="stylesheet" href="<?PHP echo base_url(); ?>application/views/pizzeria//lightbox.css" type="text/css" media="screen" />
+
 <link rel="shortcut icon" href="<?PHP echo base_url(); ?>application/views/pizzeria/images/favicon.ico" />
 
 <title>Pizzeria</title>
 
 
-<script src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-1.7.2.min.js"></script>
-<script src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-ui-1.8.18.custom.min.js"></script>
-<script src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery.smooth-scroll.min.js"></script>
-<script src="<?PHP echo base_url(); ?>application/views/pizzeria/js/lightbox.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url(); ?>application/views/pizzeria/js/lightbox.js"></script>
+<link rel="stylesheet" href="<?PHP echo base_url(); ?>application/galeria/css/lightbox.css" type="text/css" media="screen" />
 
 
 
@@ -209,6 +213,14 @@ body{
 
 <div class="caption"><div class="content"></div></div>
 </div>
+
+
+
+
+
+
+
+
 <div class="clear"></div>
 
 <br/><br/>

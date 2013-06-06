@@ -64,7 +64,7 @@ class Dodawanie extends CI_Controller {
 		$this->form_validation->set_rules('qty','lang:qty','required|numeric');
 		$this->form_validation->set_rules('price','lang:price','required|numeric|greater_than[0.99]');
 		$this->load->view('pizzeria/header');
-        $this->load->view('pizzeria/skladniki');
+        $this->load->view('pizzeria/form_ingr');
         $this->load->view('pizzeria/footer');
 
 	  if(!$this->form_validation->run())

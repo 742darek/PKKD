@@ -44,6 +44,8 @@ $route['products'] = "products";
 $route['product-add-to-cart'] = "products/addToCart";
 $route['shopping-cart-view'] = "products/shoppingCartView";
 $route['save-shopping-cart'] = "products/saveCartProducts";
+$route['save-ingredients-cart'] = "products/saveCartIngredients";
+
 
 
 
