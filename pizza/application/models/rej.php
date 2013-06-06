@@ -14,7 +14,7 @@ function __construct()
     public function dodaj($username, $email,$password,$adres,$now)
     {
     	$now = date("Y-m-d H:i:s");
-        $query_str = "INSERT INTO users (username, email, password, adres, time, rights) VALUES (?, ?, ?, ?, ?, 0)";
+        $query_str = "INSERT INTO users (username, email, password, adres,time, rights) VALUES (?, ?, ?, ?, ?, 0)";
 		$this->db->query($query_str, array($username, $email, $password, $adres, $now));
     }
 }
