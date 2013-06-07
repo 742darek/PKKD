@@ -52,7 +52,7 @@
          
         
   
-<?php echo form_close(); ?>
+
 
 
 
@@ -62,6 +62,9 @@
                 <button type="submit" name="submit" class="button">Rejestracja</button>
                 
             </h3>
+
+<?php echo form_close(); ?>
+            
 
             </div>
 		

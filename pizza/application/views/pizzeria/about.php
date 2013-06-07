@@ -20,13 +20,10 @@
 &nbsp;<h2>O nas </h2>
 
 
-<p>Pizza to potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie. W wersji podstawowej jest to płaski placek z wytrawnego ciasta drożdżowego (focaccia), posmarowany sosem pomidorowym, posypany tartym serem mozzarella i ziołami, pieczony w bardzo mocno nagrzanym piecu.</p>
+<p>Restauracja PKKD mieści się w Olsztynie w pobliżu jeziora Długiego, w siedzibie Polskiego Związku Łowieckiego, przy ulicy Parkowej 18. To kameralne, zaciszne miejsce (50 miejsc siedzących) odpowiednie na spotkania z przyjaciółmi, biznesowy lunch i rodzinną uroczystość.</p>
+<p>Proponujemy tradycyjną, domową, choć uwspółcześnioną włoską kuchnię z międzynarodowymi wpływami.</p>
 
-<p>Pizzę podaje się na gorąco, lecz rozpowszechnione jest jedzenie jej również na zimno. Tradycyjnym miejscem spożywania pizzy są pizzerie, lokale gastronomiczne specjalizujące się w przyrządzaniu i serwowaniu pizzy. </p>
-
-<p>Bazując na oryginalnych recepturach, używając naturalnych składników najwyższej jakości, komponujemy dania wyjątkowe, pełne ciekawych pomysłów i nowych smaków w atrakcyjnych cenach.</p>
-
-<p>Przede wszystkim sam Klient może utworzyæ swoją własną kompozycję pizzy wedle swojego uznania. Oferujemy wiele składników do tej czynności, wszystko po to aby się dobrze bawiæ w naszym serwisie tworząc coraz to bardziej wyszukane i egzotyczne kompozycje ! </p>
+ <p>Lubimy kulinarne poszukiwania, śledzimy pracę mistrzów i wraz z Szefem Kuchni Kbamy, aby pizza była smaczna, zdrowa i estetycznie podana.</p>
 
 
 

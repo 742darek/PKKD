@@ -13,7 +13,7 @@
 <div id="content">
 
 	<div class="panel">
-&nbsp; <h2>Menu</h2>
+&nbsp; <h2>Zamówienia klientów</h2>
 
 
 
